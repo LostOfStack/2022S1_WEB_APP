@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <title>Hardwarelogy - Home</title>
+    <title>Home</title>
     </head>
     <body>
         <?php include('includes/header.php'); ?>
