@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <title>Home</title>
+    <title>Home 123</title>
     </head>
     <body>
         <?php include('includes/header.php'); ?>
