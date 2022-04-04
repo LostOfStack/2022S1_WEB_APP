@@ -68,11 +68,11 @@
     <a class="<?php if($page == "monitor") {echo "active";} ?>" href = "/2022S1_WEB_APP/monitor.php">MONITOR</a>
     <a class="<?php if($page == "mouse") {echo "active";} ?>" href = "/2022S1_WEB_APP/mouse.php">MOUSE</a>
     <a class="<?php if($page == "speaker") {echo "active";} ?>" href = "/2022S1_WEB_APP/speaker.php">SPEAKER</a>
-    <a class="<?php if($page == "sphone") {echo "active";} ?>" href = "/2022S1_WEB_APP/sphone.php">SMART PHONE</a>
-    
+    <a class="<?php if($page == "sphone") {echo "active";} ?>" href = "/2022S1_WEB_APP/sphone.php">SMARTPHONE</a>
   </div>
+
   <div class="logo">
-    <a href = " /2022S1_WEB_APP/cart.php"><img src="/2022S1_WEB_APP/image/white cart.png" alt="cart"></a>
+    <a href = " /2022S1_WEB_APP/cart.php"><img src="/2022S1_WEB_APP/image/cart.png" alt="cart"></a>
   </div>
 
   <!-- <i class="fa fa-shopping-cart" style="font-size:24px; margin: -10px 0px -10px 0px"></i> -->

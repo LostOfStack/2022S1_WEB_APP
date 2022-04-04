@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <style>
-        </style>
+
     </head>
     <body>
         <?php include('includes/header.php'); ?>
