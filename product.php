@@ -5,10 +5,20 @@
         include('includes/header.php');
         $page = $_GET["page"];
         include('includes/navigation.php');
+
+        if ($page=="desktop"){
+            echo "<title>Dekstop</title>";
+        }
         ?>
+        
     </head>
     <body>
-        <div>
+        <div class="main">
+            <?php
+                if($page=="laptop"){
+                echo "laptop";
+                }
+            ?>
         <!--real content/body start here-->
         
 
