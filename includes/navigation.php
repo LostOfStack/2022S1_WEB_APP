@@ -54,7 +54,7 @@
 }
 
 .logo img{
-  width: 60px;
+  width: 50px;
   height: 45px;
 }
 </style>
