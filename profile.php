@@ -5,10 +5,10 @@
     <body>
         <?php include('includes/header.php'); ?>
         <?php $page = null; include('includes/navigation.php'); ?>
-        <div>
-            <h1>Profile</h1>
-            <img src="/2022S1_WEB_APP/image/profile.jpg" style="border-radius: 50%; width: 500px; height: 500px">
-        </div>
+
+        <h1>Profile</h1>
+        <img src="/2022S1_WEB_APP/image/profile.jpg" style="border-radius: 50%; width: 500px; height: 500px">
+
         <?php include('includes/footer.php'); ?>
     </body>
 </html>
