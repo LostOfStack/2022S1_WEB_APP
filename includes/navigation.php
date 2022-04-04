@@ -68,7 +68,7 @@
     <a class="<?php if($page == "monitor") {echo "active";} ?>" href = "/2022S1_WEB_APP/product.php?page=monitor">MONITOR</a>
     <a class="<?php if($page == "mouse") {echo "active";} ?>" href = "/2022S1_WEB_APP/product.php?page=mouse">MOUSE</a>
     <a class="<?php if($page == "speaker") {echo "active";} ?>" href = "/2022S1_WEB_APP/product.php?page=speaker">SPEAKER</a>
-    <a class="<?php if($page == "sphone") {echo "active";} ?>" href = "/2022S1_WEB_APP/product.php?page=sphone">SMARTPHONE</a>
+    <a class="<?php if($page == "smartphone") {echo "active";} ?>" href = "/2022S1_WEB_APP/product.php?page=smartphone">SMARTPHONE</a>
   </div>
 
   <div class="logo">
