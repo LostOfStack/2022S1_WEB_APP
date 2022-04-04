@@ -6,6 +6,17 @@ body{
     /* margin: 100px; */
 }
 
+.profile{
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    position: static;
+    width: 600px;
+    border-radius: 30px;
+    background-color: white;
+}
+
 .main{
     margin-top: 150px;
     padding: 10px;
