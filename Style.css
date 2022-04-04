@@ -8,7 +8,13 @@ body{
 
 .main{
     margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
     height: 1600px;
     padding: 10px;
     position: static;
+    width: 800px;
+    background-color: white;
+    border-radius:30px;
+    text-align: center;
 }

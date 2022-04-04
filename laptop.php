@@ -4,7 +4,7 @@
     </head>
     <body>
     <?php include('includes/header.php'); ?>
-        <?php $page = "home"; include('includes/navigation.php'); ?>
+        <?php $page = "laptop"; include('includes/navigation.php'); ?>
 
         <article>
         <!--real content/body start here-->
