@@ -6,9 +6,9 @@ body{
     /* margin: 100px; */
 }
 
-div .main{
+.main{
     margin-top: 150px;
     height: 1600px;
     padding: 10px;
-    align-items: center;
+    position: static;
 }
