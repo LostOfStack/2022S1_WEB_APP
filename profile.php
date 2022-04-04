@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <style>
+            article{
+                position:static;
+            }
+        </style>
     </head>
     <body>
         <?php include('includes/header.php'); ?>
