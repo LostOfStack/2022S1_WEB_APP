@@ -29,6 +29,7 @@
                 margin: 50px;
                 float:none;
                 position:static;
+                padding:20px;
             }
 
             .contactus03{
@@ -58,7 +59,7 @@
                 <p>Email:<br>hardwareology@gmail.com</p>
                 <br>
                 <p>Follow Us on our Facebook to get latest Update!<br><a href="https://www.facebook.com/UTARnet" target="_blank">Hardwareology</a></p>
-                <p style="color:red">&No such facebook page exist, we didn't create it, the link direct you to Utar Facebook page</p>
+                <p style="color:red">*No such facebook page exist, we didn't create it, the link direct you to Utar Facebook page</p>
             </div>
 
             <div class="contactus02">
