@@ -5,6 +5,25 @@ body{
     /* padding-top: 100px; */
     /* margin: 100px; */
 }
+.myhome{
+    margin-top: 130px;
+    font-size: 5em;
+ }
+ .columnhome {
+
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    box-sizing: border-box
+  }
+  .rowhome::after {
+
+    content: "";
+    clear: both;
+    display: table;
+    box-sizing: border-box
+  }
+
 
 .profile01{
     margin-top: 150px;
