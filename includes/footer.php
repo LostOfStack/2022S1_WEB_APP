@@ -9,7 +9,7 @@
         padding:10px;
     }
 
-    .company{
+    footer .company{
         margin-top:50px;
         width: 200px;
         margin: 10px;
@@ -18,20 +18,21 @@
         font-size: 1.5em;
     }
 
-    .company a{
+    footer .company a{
         color: white;
     }
-    .company a:link, .company a:visited{
+    footer .company a:link, .company a:visited{
         text-decoration: none;
     }
 
-    .company a:hover {
+    footer .company a:hover {
         text-decoration: underline;
     }
 
 </style>
 
 <footer>
+    <p style="text-align: center">Just lend your wallet to us. Believe Us. We always care about your wallet, especially the content inside it.</p>
     <div class="company">
         <p>Our Company:</p>
         <a href="/2022S1_WEB_APP/aboutus.php">About Us</a><br>
