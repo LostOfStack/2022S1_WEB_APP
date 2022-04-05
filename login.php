@@ -100,9 +100,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     </style>
 </head>
 <body>
+    <?php include('includes/guest header.php'); ?>
     <div class="wrapper">
         <h2>Login</h2><br>
-        <?php include('includes/guest header.php'); ?>
         <?php 
         if(!empty($login_err)){
             echo '<div class="alert alert-danger">' . $login_err . '</div>';
@@ -123,24 +123,26 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <div class="form-group">
                 <input type="submit" class="btn btn-primary" value="Login">
             </div>
-            <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
+            <p>Don't have an account? <a href="signup.php">Sign up now</a>.</p>
         </form>
     </div>
+
+    <style>
+        .wrapper{
+            margin-top: 150px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+            position: static;
+            /* border-style: solid;
+            border-color: black;
+            border-width: 1px;
+            border-radius: 30px;
+            background-color: white; */
+            text-align: center;
+        }
+    </style>
     <?php include('includes/footer.php'); ?>
+    
 </body>
-<style>
-    .wrapper{
-        margin-top: 150px;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 10px;
-        position: static;
-        /* border-style: solid;
-        border-color: black;
-        border-width: 1px;
-        border-radius: 30px;
-        background-color: white; */
-        text-align: center;
-    }
-</style>
 </html>

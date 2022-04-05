@@ -1,5 +1,6 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet"  href="/2022S1_WEB_APP/Style.css">
     
 </head>
@@ -7,6 +8,9 @@
 <header class="container">
     <div class="crop">
         <a href = "/2022S1_WEB_APP/index.php"><img src="/2022S1_WEB_APP/image/Hardwareology.png" alt="Hardwareology"></a>
+    </div>
+    <div class="logout">
+        <a href = "/2022S1_WEB_APP/logout.php"><i class="fa fa-sign-out"></i>Log Out</a>
     </div>
     <div class="profile">
         <a href = "/2022S1_WEB_APP/profile.php"><img src="/2022S1_WEB_APP/image/profileIcon.png" alt="Profile"></a>
