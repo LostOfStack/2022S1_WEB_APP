@@ -12,7 +12,11 @@
 
 
 session_start();
-$con = mysqli_connect("localhost","root","","test");
+$con = mysqli_connect("localhost","root","","database");
+
+if($con === false){
+    die("ERROR: Could not connect. " . mysqli_connect_error());
+}
 
 if(isset ($_POST['save_multiple_checkbox']))
 {
