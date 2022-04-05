@@ -48,4 +48,9 @@
         font-size: 17px;
         width: 10%;
     }
+
+    .login{
+        top:0;
+        right:0;
+    }
 </style>
