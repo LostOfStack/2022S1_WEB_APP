@@ -9,7 +9,7 @@
         
         <h1>Shopping Cart</h1>
 
-        <table width='80%' border=1 >
+        <table width='80%' border = 1 >
 
             <tr>
                 <th>Subject</th> <th>Message</th> <th>Type</th> <th>Posted Date</th> <th> Action </th>

@@ -8,8 +8,9 @@
     <div class="crop">
         <a href = "/2022S1_WEB_APP/index.php"><img src="/2022S1_WEB_APP/image/Hardwareology.png" alt="Hardwareology"></a>
     </div>
-    <div class="profile">
-        <a href = "/2022S1_WEB_APP/profile.php"><img src="/2022S1_WEB_APP/image/profileIcon.png" alt="Profile"></a>
+    <div class="login">
+        <a href = "/2022S1_WEB_APP/signup.php">Sign Up</a>
+        <a href = "/2022S1_WEB_APP/login.php">Login</a>
     </div>
 </header>
 
@@ -27,10 +28,6 @@
         /* position: fixed; */
     }
     
-    .profile img{
-        width: 50px;
-        height: 50px;
-    }
 
     .container{
         background-color: black;
@@ -41,11 +38,14 @@
         left: 0px;
     }
 
-    .profile a{
-        font-size:48px;
-        color:gray;
-        position: fixed;
-        top: 15px;
-        right: 15px;
+    .login a {
+        
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        width: 10%;
     }
 </style>
