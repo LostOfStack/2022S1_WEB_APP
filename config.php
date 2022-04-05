@@ -11,7 +11,7 @@
 // $mysqli = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $databaseName); 
 
 
-session_start();
+// session_start();
 $con = mysqli_connect("localhost","root","","database");
 
 if($con === false){

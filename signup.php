@@ -1,18 +1,3 @@
-<!DOCTYPE html>
-<html>
-    <head>
-    <title>Home</title>
-    </head>
-    <body>
-        <?php include('includes/guest header.php'); ?>
-
-
-
-        <?php include('includes/footer.php'); ?>
-    </body>
-</html>
-
-
 <?php
 // Include config file
 require_once "config.php";
@@ -33,7 +18,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         // Prepare a select statement
         $sql = "SELECT id FROM users WHERE username = ?";
         
-        if($stmt = mysqli_prepare($link, $sql)){
+        if($stmt = mysqli_prepare($con, $sql)){
             // Bind variables to the prepared statement as parameters
             mysqli_stmt_bind_param($stmt, "s", $param_username);
             
@@ -106,7 +91,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }
     
     // Close connection
-    mysqli_close($link);
+    mysqli_close($con);
 }
 ?>
  
@@ -122,9 +107,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     </style>
 </head>
 <body>
+    <?php include('includes/guest header.php'); ?>
     <div class="wrapper">
-        <h2>Sign Up</h2>
-        <p>Please fill this form to create an account.</p>
+        <h2>Sign Up</h2><br>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div class="form-group">
                 <label>Username</label>
@@ -148,5 +133,21 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <p>Already have an account? <a href="login.php">Login here</a>.</p>
         </form>
     </div>    
+    <style>
+        .wrapper{
+        margin-top: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        position: static;
+        /* border-style: solid;
+        border-color: black;
+        border-width: 1px;
+        border-radius: 30px;
+        background-color: white; */
+        text-align: center;
+        }
+    </style>
+    <?php include('includes/footer.php'); ?>
 </body>
 </html>
