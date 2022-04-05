@@ -47,11 +47,10 @@
                                             <p>Price: RM 9,000</p>
                                         </div>
                      </div>
-               
-           
+
                      <div class ="column">   
                             <a href="cart.php">
-                                <img src="image/acer laptop.jpg" width ="100%" alt="ACER Laptop">
+                                <img src="image/acer laptop.jpg" width ="75%" alt="ACER Laptop">
                             </a>
                             
                                 <div class="caption">
@@ -62,7 +61,7 @@
                    
                     <div class ="column">
                             <a href="cart.php">
-                                <img src="image/dell laptop.jpg"  width ="100%" alt="DELL Laptop">
+                                <img src="image/dell laptop.jpg"  width ="80.5%" alt="DELL Laptop">
                             </a>
                                 <div class="caption">
                                     <h3>DELL Laptop</h3>
