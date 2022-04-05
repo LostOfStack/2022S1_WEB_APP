@@ -40,4 +40,5 @@
     </div>
     <p style="text-align: center">&copy; 2022 Hardwareology. All rights reserved.</p>
     <p style="text-align: center">(not really any rights registered, just showing)</p>
+    <p style="text-align: center">This website is developed by UTAR students</p>
 </footer>
