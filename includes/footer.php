@@ -1,5 +1,6 @@
 <style>
     footer{
+        margin-top:50px;
         position: static;
         left: 0;
         bottom: 0;
