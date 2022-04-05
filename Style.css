@@ -13,6 +13,9 @@ body{
     padding: 10px;
     position: static;
     width: 600px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
     border-radius: 30px;
     background-color: white;
     text-align: center;
