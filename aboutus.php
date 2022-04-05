@@ -2,16 +2,16 @@
 <html>
     <head>
     <title>About Us</title>
-    </head>
-    <body>
-        <?php 
+    <?php 
         include('includes/header.php');
+        $page = null;
         include('includes/navigation.php');
         ?>
+    </head>
+    <body>
 
-        <div>
-        <!--real content/body start here-->
-        
+        <div class=".main">
+            <h1>About Us</h1>
         </div>
 
         <?php include('includes/footer.php'); ?>
