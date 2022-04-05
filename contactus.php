@@ -2,15 +2,16 @@
 <html>
     <head>
     <title>Contact Us</title>
-    </head>
-    <body>
-        <?php 
+    <?php 
         include('includes/header.php');
+        $page = null;
         include('includes/navigation.php');
         ?>
+    </head>
+    <body>
 
         <div>
-        <!--real content/body start here-->
+            <h1>Contact Us</h1>
         
         </div>
 
