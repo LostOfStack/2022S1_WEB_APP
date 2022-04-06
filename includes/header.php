@@ -97,8 +97,7 @@
             <div class="profile">
                 <a href = "/2022S1_WEB_APP/profile.php"><img src="/2022S1_WEB_APP/image/profileIcon.png" alt="Profile"></a>
             </div>
-        </header>'
-        ;
+        </header>';
         exit;
     } else{ // guest header
         echo '<header class="container">
