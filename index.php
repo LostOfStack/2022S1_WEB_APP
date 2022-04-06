@@ -83,25 +83,26 @@ session_start();
             </div>
         </div>
     </div>
+        <h2 style="font-size:100px"><br><br>Other Product</h2>
     <div class="rowhome">
             <div class="columnhome">
             <a href="/2022S1_WEB_APP/product.php?page=desktop">
-            <img src="image/dell desktop.jpg" alt="DellDesktop" style="width:100%;height:100%;">
+            <img src="image/dell desktop.jpg" alt="DellDesktop" style="width:70%;height:100%;">
             </a>
-            <p style="font-size:50px;position:relative;top:80px;">Desktop
+            <p style="font-size:50px;">Desktop
             </p>
             </div>
             <div class="columnhome">
             <a href="/2022S1_WEB_APP/product.php?page=mouse">
-            <img src="image/glorious mouse.jpg" alt="Mouse" style="width:100%;height:100%;">
+            <img src="image/glorious mouse.jpg" alt="Mouse" style="width:70%;height:100%;">
             </a>
             <p style="font-size:50px;">Mouse</p>
             </div>
             <div class="columnhome">
             <a href="/2022S1_WEB_APP/product.php?page=speaker">
-            <img src="image/jbl speaker.jpg" alt="Speaker" style="width:100%;height:100%;">
+            <img src="image/jbl speaker.jpg" alt="Speaker" style="width:70%;height:100%;">
             </a>
-            <p style="font-size:50px;position:relative;top:200px;">Speaker</p>
+            <p style="font-size:50px;">Speaker</p>
             </div>
         </div>
     <style>
