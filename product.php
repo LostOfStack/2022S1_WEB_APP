@@ -9,30 +9,35 @@
 
         if ($page=="desktop"){
             echo "<title>Dekstop</title>";
+            echo "<h1>Desktops</h1>";
+        }
+        elseif ($page=="laptop"){
+            echo "<title>Laptop</title>";
+            echo "<h1>Laptops</h1>";
+        }
+        elseif ($page=="mouse"){
+            echo "<title>Mouse</title>";
+            echo "<h1>Mouse</h1>";
+        }
+        elseif ($page=="speaker"){
+            echo "<title>Speaker</title>";
+            echo "<h1>Speakers</h1>";
+        }
+        elseif ($page=="smartphone"){
+            echo "<title>Smartphone</title>";
+            echo "<h1>Smartphone</h1>";
+        }
+        elseif ($page=="monitor"){
+            echo "<title>Monitor</title>";
+            echo "<h1>Monitors</h1>";
         }
         ?>
         
     </head>
     <body>
-            <?php
-             if(isset($_SESSION['status']))
-                {
-                    echo"<h4>".$_SESSION['status']."</h4>";
-                    unset($_SESSION['status']);
-                }
-            ?>
+            
         <div class="main">
-        <form action = "config.php" method="POST">
-                <div class ="form-group mb-3">
-                    <input type ="checkbox" name ="brands[]" value ="Acer"> Acer <br>
-                    <input type ="checkbox" name ="brands[]" value ="Apple"> Apple<br>
-                    <input type ="checkbox" name ="brands[]" value ="Dell"> Dell <br>
-                    <input type ="checkbox" name ="brands[]" value ="Samsung"> Samsung <br>
-                </div>
-                <div class = "form-group mb-3"> 
-                    <button type="submit" name ="save_multiple_checkbox" class="btn btn-primary"> Save Multiple Checkbox </button>
-                </div>
-            </form> 
+        
         <?php
                 if($page=="laptop"){
                     echo '<Strong>
