@@ -57,8 +57,7 @@
     <a class="<?php if($page == "speaker") {echo "active";} ?>" href = "/2022S1_WEB_APP/product.php?page=speaker">SPEAKER</a>
     <a class="<?php if($page == "smartphone") {echo "active";} ?>" href = "/2022S1_WEB_APP/product.php?page=smartphone">SMARTPHONE</a>
   </div>
-  <?php
-    session_start();
+  <?php 
     if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
       echo '
       <div class="logo">

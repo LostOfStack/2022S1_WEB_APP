@@ -15,14 +15,15 @@
                 margin-right: 50px;
                 padding: 20px;
                 position: static;
-                width: 60%;
+                width: 50%;
                 border-style: solid;
                 border-color: black;
                 border-radius: 30px;
                 background-color: white;
                 text-align: left;
                 box-shadow: 5px 10px 5px #888888;
-                min-width: 400px;
+                min-width: 600px;
+                max-width: 1000px;
             }
 
             .contactus02{
