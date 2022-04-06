@@ -3,8 +3,8 @@
 require_once "config.php";
  
 // Define variables and initialize with empty values
-$username = $password = $confirm_password = $email = $phone = "";
-$username_err = $password_err = $confirm_password_err = $email_err = $phone_err = "";
+$username = $password = $confirm_password = "";
+$username_err = $password_err = $confirm_password_err = "";
  
 // Processing form data when form is submitted
 if($_SERVER["REQUEST_METHOD"] == "POST"){
@@ -52,20 +52,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     } else{
         $password = trim($_POST["password"]);
     }
-
-    // Validate email
-    if(empty($_POST["email"])){
-        $email_err = "Please enter your email.";     
-    } else{
-        $email = $_POST["email"];
-    }
-
-    // Validate phone number
-    if(empty($_POST["phoneNo"])){
-        $phone_err = "Please enter your phone number.";     
-    } else{
-        $phone = $_POST["phoneNo"];
-    }
     
     // Validate confirm password
     if(empty(trim($_POST["confirm_password"]))){
@@ -78,20 +64,18 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }
     
     // Check input errors before inserting in database
-    if(empty($username_err) && empty($password_err) && empty($confirm_password_err) && empty($email_err) && empty($phone_err)){
+    if(empty($username_err) && empty($password_err) && empty($confirm_password_err)){
         
         // Prepare an insert statement
-        $sql = "INSERT INTO users (username, password, email, phoneNo) VALUES (?, ?, ?, ?)";
+        $sql = "INSERT INTO users (username, password) VALUES (?, ?)";
          
         if($stmt = mysqli_prepare($con, $sql)){
             // Bind variables to the prepared statement as parameters
-            mysqli_stmt_bind_param($stmt, "ssss", $param_username, $param_password, $param_email, $param_phone);
+            mysqli_stmt_bind_param($stmt, "ss", $param_username, $param_password);
             
             // Set parameters
             $param_username = $username;
             $param_password = password_hash($password, PASSWORD_DEFAULT); // Creates a password hash
-            $param_email = $email;
-            $param_phone = $phone;
             
             // Attempt to execute the prepared statement
             if(mysqli_stmt_execute($stmt)){
@@ -137,7 +121,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     </style>
 </head>
 <body>
-    <?php include('includes/header.php'); ?>
+    <?php include('includes/guest header.php'); ?>
     <div class="wrapper">
         <h2>Sign Up</h2><br>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
@@ -157,18 +141,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <span class="invalid-feedback"><?php echo $confirm_password_err; ?></span>
             </div>
             <div class="form-group">
-                <label>Email</label>
-                <input type="email" name="email" class="form-control <?php echo (!empty($email_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $email; ?>">
-                <span class="invalid-feedback"><?php echo $email_err; ?></span>
-            </div>
-            <div class="form-group">
-                <label>Phone Number</label>
-                <input type="tel" name="phoneNo" class="form-control <?php echo (!empty($phone_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $phone; ?>" placeholder="012-3456789" 
-                pattern="[0-9]{3}-[0-9]{8}||[0-9]{3}-[0-9]{7}">
-                <span class="invalid-feedback"><?php echo $phone_err; ?></span>
-            </div>
-            <div class="form-group">
                 <input type="submit" class="btn btn-primary" value="Submit">
+                <input type="reset" class="btn btn-secondary ml-2" value="Reset">
             </div>
             <p>Already have an account? <a href="login.php">Login here</a>.</p>
         </form>

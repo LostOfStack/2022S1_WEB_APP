@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Apr 06, 2022 at 03:29 PM
+-- Generation Time: Apr 06, 2022 at 03:43 PM
 -- Server version: 5.7.36
 -- PHP Version: 7.4.26
 
@@ -76,19 +76,11 @@ CREATE TABLE IF NOT EXISTS `users` (
   `username` varchar(50) NOT NULL,
   `password` varchar(255) NOT NULL,
   `email` varchar(50) NOT NULL,
-  `phoneNo` int(10) NOT NULL,
-  `gender` varchar(10) NOT NULL,
+  `phoneNo` varchar(20) NOT NULL,
   `created_at` datetime DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   UNIQUE KEY `username` (`username`)
 ) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `users`
---
-
-INSERT INTO `users` (`id`, `username`, `password`, `email`, `phoneNo`, `gender`, `created_at`) VALUES
-(1, 'WorstPie', '$2y$10$HsymJtMj5ruEDHQI/2eGuu5yGS.GXVKX2qlfcR1U7vhXvPJGcyOCC', '', 0, '', '2022-04-05 23:27:02');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
