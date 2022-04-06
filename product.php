@@ -62,7 +62,7 @@
                                                    }
                                                 }
                                            echo '</div>';
-                         echo '</div>';                  
+                        echo '</div>';                  
                                                 
                         echo '<Strong>
                             <div class ="column">   
