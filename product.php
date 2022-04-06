@@ -35,10 +35,13 @@
         
     </head>
     <body>
-            
+        
         <div class="main">
         
         <?php
+        $con = mysqli_connect("localhost","root","", "database")
+        $p_details = "SELECT * FROM product";
+        
                 if($page=="laptop"){
                     echo '<Strong>
                     <div class="row">
