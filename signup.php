@@ -100,10 +100,24 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <head>
     <meta charset="UTF-8">
     <title>Sign Up</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
     <style>
         body{ font: 14px sans-serif; }
-        .wrapper{ width: 360px; padding: 20px; }
+        .wrapper{
+        width: 100%; 
+        padding: 20px;
+        margin-top: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        position: static;
+        /* border-style: solid;
+        border-color: black;
+        border-width: 1px;
+        border-radius: 30px;
+        background-color: white; */
+        text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -134,19 +148,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         </form>
     </div>    
     <style>
-        .wrapper{
-        margin-top: 150px;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 10px;
-        position: static;
-        /* border-style: solid;
-        border-color: black;
-        border-width: 1px;
-        border-radius: 30px;
-        background-color: white; */
-        text-align: center;
-        }
+        
     </style>
     <?php include('includes/footer.php'); ?>
 </body>
