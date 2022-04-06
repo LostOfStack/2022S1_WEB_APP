@@ -1,16 +1,3 @@
-<!-- <nav>
-	<ul>
-		<a href = "/2022S1_WEB_APP/laptop.php"><li>LAPTOP</li></a>
-		<a href = "/2022S1_WEB_APP/desktop.php"><li>DESKTOP</li></a>
-		<a href = "/2022S1_WEB_APP/monitor.php"><li>MONITOR</li></a>
-		<a href = "/2022S1_WEB_APP/mouse.php"><li>MOUSE</li></a>
-        <a href = "/2022S1_WEB_APP/speaker.php"><li>SPEAKER</li></a>
-        <a href = "/2022S1_WEB_APP/sphone.php"><li>SPHONE</li></a>
-	</ul>
-</nav> -->
-
-
-
 <style>
 #navbody {
   padding: 0;
@@ -75,5 +62,4 @@
     <a href = " /2022S1_WEB_APP/cart.php"><img src="/2022S1_WEB_APP/image/cart.png" alt="cart"></a>
   </div>
 
-  <!-- <i class="fa fa-shopping-cart" style="font-size:24px; margin: -10px 0px -10px 0px"></i> -->
 </body>
