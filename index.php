@@ -125,7 +125,7 @@ session_start();
         <h2 style="font-size:100px;text-align:center;">Why Choose Us</h2>
         <div class="rowhome">
             <div class="columnhome">
-            <img src="image/cash2.png" alt="CashLogo" style="width:70%;height:100%;">
+            <img src="image/cash2.png" alt="CashLogo" style="width:55%;height:100%;">
             </a>
             </p>
             </div>
