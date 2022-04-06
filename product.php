@@ -1,4 +1,7 @@
-<?php session_start(); ?>
+<?php 
+session_start();
+require 'check_if_added.php';
+ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -51,6 +54,7 @@
                                                 <h2>APPLE</h2>
                                                 <h3>MacBookPro13"</h3>
                                                 <p>Price: RM 5,599</p> </Strong>';
+                                                
                                                 if(!isset($_SESSION['email'])){ 
                                                    echo '<p><a href="login.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p>';
                                                 }
@@ -59,7 +63,6 @@
                                                         echo '<a href="#" class=btn btn-block btn-success disabled>Added to cart</a>';
                                                    }
                                                    else{
-    
                                                    echo '<a href="cart_add.php?id=1" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Add to cart</a>';
                                                    }
                                                 }
@@ -500,7 +503,7 @@
                                                 echo '</div>';
                                      echo '</div>';
                              echo '</div>';
-                         }
+                }
                      
                          
             ?>
