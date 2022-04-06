@@ -442,7 +442,7 @@
                                             
                                                 <div class="caption">
                                                     <h3>Samsung Galaxy S21</h3>
-                                                    <p>Price: RM 5000/p></Strong>';
+                                                    <p>Price: RM 5000</p></Strong>';
                                                     
                                                     if(!isset($_SESSION['email'])){ 
                                                         echo '<p><a href="login.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p>';
