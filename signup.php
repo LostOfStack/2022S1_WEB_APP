@@ -167,6 +167,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 pattern="[0-9]{3}-[0-9]{8}||[0-9]{3}-[0-9]{7}">
                 <span class="invalid-feedback"><?php echo $phone_err; ?></span>
             </div>
+            <div>
+                <label>Gender</label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="others" name="gender" value="others">
+                <label for="others">Others</label><br><br>
+            </div>
             <div class="form-group">
                 <input type="submit" class="btn btn-primary" value="Submit">
             </div>

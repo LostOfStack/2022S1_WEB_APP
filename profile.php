@@ -18,11 +18,11 @@
                 <input type="tel" id="phone" name="phone" value="012-3456789" placeholder="012-3456789" 
                 pattern="[0-9]{3}-[0-9]{8}||[0-9]{3}-[0-9]{7}" required><br><br>
                 <label>Gender</label><br>
-                <input type="radio" id="male" name="fav_language" value="male">
+                <input type="radio" id="male" name="gender" value="male">
                 <label for="male">Male</label>
-                <input type="radio" id="female" name="fav_language" value="female">
+                <input type="radio" id="female" name="gender" value="female">
                 <label for="female">Female</label>
-                <input type="radio" id="others" name="fav_language" value="others">
+                <input type="radio" id="others" name="gender" value="others">
                 <label for="others">Others</label><br><br>
                 <input type="submit" value="Update">
                 
