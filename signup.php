@@ -3,8 +3,8 @@
 require_once "config.php";
  
 // Define variables and initialize with empty values
-$username = $password = $confirm_password = $email = $phone = "";
-$username_err = $password_err = $confirm_password_err = $email_err = $phone_err = "";
+$username = $password = $confirm_password = $email = $phone = $gender = "";
+$username_err = $password_err = $confirm_password_err = $email_err = $phone_err = $gender_err = "";
  
 // Processing form data when form is submitted
 if($_SERVER["REQUEST_METHOD"] == "POST"){
@@ -66,6 +66,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     } else{
         $phone = $_POST["phoneNo"];
     }
+
+    // Validate gender
+    if(empty($_POST["gender"])){
+        $gender_err = "Please choose your gender.";     
+    } else{
+        $gender = $_POST["gender"];
+    }
     
     // Validate confirm password
     if(empty(trim($_POST["confirm_password"]))){
@@ -78,20 +85,21 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }
     
     // Check input errors before inserting in database
-    if(empty($username_err) && empty($password_err) && empty($confirm_password_err) && empty($email_err) && empty($phone_err)){
+    if(empty($username_err) && empty($password_err) && empty($confirm_password_err) && empty($email_err) && empty($phone_err) && empty($gender_err)){
         
         // Prepare an insert statement
-        $sql = "INSERT INTO users (username, password, email, phoneNo) VALUES (?, ?, ?, ?)";
+        $sql = "INSERT INTO users (username, password, email, phoneNo, gender) VALUES (?, ?, ?, ?, ?)";
          
         if($stmt = mysqli_prepare($con, $sql)){
             // Bind variables to the prepared statement as parameters
-            mysqli_stmt_bind_param($stmt, "ssss", $param_username, $param_password, $param_email, $param_phone);
+            mysqli_stmt_bind_param($stmt, "sssss", $param_username, $param_password, $param_email, $param_phone, $param_gender);
             
             // Set parameters
             $param_username = $username;
             $param_password = password_hash($password, PASSWORD_DEFAULT); // Creates a password hash
             $param_email = $email;
             $param_phone = $phone;
+            $param_gender = $gender;
             
             // Attempt to execute the prepared statement
             if(mysqli_stmt_execute($stmt)){
@@ -145,37 +153,38 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <label>Username</label>
                 <input type="text" name="username" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
                 <span class="invalid-feedback"><?php echo $username_err; ?></span>
-            </div>    
+            </div><br>    
             <div class="form-group">
                 <label>Password</label>
                 <input type="password" name="password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $password; ?>">
                 <span class="invalid-feedback"><?php echo $password_err; ?></span>
-            </div>
+            </div><br>
             <div class="form-group">
                 <label>Confirm Password</label>
                 <input type="password" name="confirm_password" class="form-control <?php echo (!empty($confirm_password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $confirm_password; ?>">
                 <span class="invalid-feedback"><?php echo $confirm_password_err; ?></span>
-            </div>
+            </div><br>
             <div class="form-group">
                 <label>Email</label>
                 <input type="email" name="email" class="form-control <?php echo (!empty($email_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $email; ?>">
                 <span class="invalid-feedback"><?php echo $email_err; ?></span>
-            </div>
+            </div><br>
             <div class="form-group">
                 <label>Phone Number</label>
                 <input type="tel" name="phoneNo" class="form-control <?php echo (!empty($phone_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $phone; ?>" placeholder="012-3456789" 
                 pattern="[0-9]{3}-[0-9]{8}||[0-9]{3}-[0-9]{7}">
                 <span class="invalid-feedback"><?php echo $phone_err; ?></span>
-            </div>
-            <div>
-                <label>Gender</label><br>
+            </div><br>
+            <div class="form-group">
+                <label>Gender</label>
                 <input type="radio" id="male" name="gender" value="male">
                 <label for="male">Male</label>
                 <input type="radio" id="female" name="gender" value="female">
                 <label for="female">Female</label>
                 <input type="radio" id="others" name="gender" value="others">
-                <label for="others">Others</label><br><br>
-            </div>
+                <label for="others">Others</label>
+                <br><span class="invalid-feedback"><?php echo $gender_err; ?></span>
+            </div><br>
             <div class="form-group">
                 <input type="submit" class="btn btn-primary" value="Submit">
             </div>

@@ -1,3 +1,8 @@
+<?php 
+    include_once("config.php"); 
+    $result = mysqli_query($con, "SELECT * FROM users ORDER BY id DESC");
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
