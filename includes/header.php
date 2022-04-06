@@ -1,3 +1,4 @@
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -5,19 +6,86 @@
     
 </head>
 
-<header class="container">
-    <div class="crop">
-        <a href = "/2022S1_WEB_APP/index.php"><img src="/2022S1_WEB_APP/image/Hardwareology.png" alt="Hardwareology"></a>
-    </div>
-    <div class="logout">
-        <a href = "/2022S1_WEB_APP/logout.php"><i class="fa fa-sign-out"></i>Log Out</a>
-    </div>
-    <div class="profile">
-        <a href = "/2022S1_WEB_APP/profile.php"><img src="/2022S1_WEB_APP/image/profileIcon.png" alt="Profile"></a>
-    </div>
-</header>
+<?php
+    session_start();
+    
+    // Check if the user is logged in, if not then redirect him to login page
+    if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+        echo '<header class="container">
+            <div class="crop">
+                <a href = "/2022S1_WEB_APP/index.php"><img src="/2022S1_WEB_APP/image/Hardwareology.png" alt="Hardwareology"></a>
+            </div>
+            <div class="logout">
+                <a href = "/2022S1_WEB_APP/logout.php">Log out</a>
+            </div>
+            <div class="profile">
+                <a href = "/2022S1_WEB_APP/profile.php"><img src="/2022S1_WEB_APP/image/profileIcon.png" alt="Profile"></a>
+            </div>
+        </header>';
+        exit;
+    } else{ // guest header
+        echo '<header class="container">
+            <div class="crop">
+                <a href = "/2022S1_WEB_APP/index.php"><img src="/2022S1_WEB_APP/image/Hardwareology.png" alt="Hardwareology"></a>
+            </div>
+            <div class="logout">
+                <a href = "/2022S1_WEB_APP/login.php">Log in</a>
+            </div>
+        </header>';
+        exit;
+    }
+?>
+
 
 <style>
+    .login{
+        width:180px;
+        height:35px;
+        position: fixed;
+        top: 15px;
+        right: 10px;
+    }
+
+    .login a:link, .login a:visited {
+        background-color: black;
+        border-width:2px;
+        border-color: white;
+        border-style: solid;
+        color: white;
+        padding: 14px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .login a:hover, .login a:active {
+        background-color: #7FFFD4;
+    }
+
+    .logout{
+        width:180px;
+        height:35px;
+        position: fixed;
+        top: 15px;
+        right: 10px;
+    }
+
+    .logout a:link, .logout a:visited {
+        background-color: black;
+        border-width:2px;
+        border-color: white;
+        border-style: solid;
+        color: white;
+        padding: 14px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .logout a:hover, .logout a:active {
+        background-color: red;
+    }
+
     /* .crop {
         width: 200px;
         height: 80px;
