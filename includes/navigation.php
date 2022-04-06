@@ -57,9 +57,19 @@
     <a class="<?php if($page == "speaker") {echo "active";} ?>" href = "/2022S1_WEB_APP/product.php?page=speaker">SPEAKER</a>
     <a class="<?php if($page == "smartphone") {echo "active";} ?>" href = "/2022S1_WEB_APP/product.php?page=smartphone">SMARTPHONE</a>
   </div>
-
-  <div class="logo">
-    <a href = " /2022S1_WEB_APP/cart.php"><img src="/2022S1_WEB_APP/image/cart.png" alt="cart"></a>
-  </div>
+  <?php
+    session_start();
+    if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+      echo '
+      <div class="logo">
+        <a href = " /2022S1_WEB_APP/login.php"><img src="/2022S1_WEB_APP/image/cart.png" alt="cart"></a>
+      </div>';
+    }else{
+      echo '
+      <div class="logo">
+        <a href = " /2022S1_WEB_APP/cart.php"><img src="/2022S1_WEB_APP/image/cart.png" alt="cart"></a>
+      </div>';
+    }
+  ?>
 
 </body>
