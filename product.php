@@ -131,7 +131,7 @@
                                                        echo '<p><a href="login.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p>';
                                                     }
                                                     else{
-                                                        if(check_if_added_to_cart(1)){
+                                                        if(check_if_added_to_cart(4)){
                                                             echo '<a href="#" class=btn btn-block btn-success disabled>Added to cart</a>';
                                                        }
                                                        else{
@@ -157,7 +157,7 @@
                                                     echo '<p><a href="login.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p>';
                                                 }
                                                 else{
-                                                    if(check_if_added_to_cart(2)){
+                                                    if(check_if_added_to_cart(5)){
                                                         echo '<a href="#" class=btn btn-block btn-success disabled>Added to cart</a>';
                                                     }
                                                     else{
@@ -181,7 +181,7 @@
                                                     echo '<p><a href="login.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p>';
                                                 }
                                                 else{
-                                                    if(check_if_added_to_cart(3)){
+                                                    if(check_if_added_to_cart(6)){
                                                         echo '<a href="#" class=btn btn-block btn-success disabled>Added to cart</a>';
                                                     }
                                                     else{
@@ -208,7 +208,7 @@
                                                            echo '<p><a href="login.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p>';
                                                         }
                                                         else{
-                                                            if(check_if_added_to_cart(1)){
+                                                            if(check_if_added_to_cart(7)){
                                                                 echo '<a href="#" class=btn btn-block btn-success disabled>Added to cart</a>';
                                                            }
                                                            else{
@@ -234,7 +234,7 @@
                                                         echo '<p><a href="login.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p>';
                                                     }
                                                     else{
-                                                        if(check_if_added_to_cart(2)){
+                                                        if(check_if_added_to_cart(8)){
                                                             echo '<a href="#" class=btn btn-block btn-success disabled>Added to cart</a>';
                                                         }
                                                         else{
@@ -258,7 +258,7 @@
                                                         echo '<p><a href="login.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p>';
                                                     }
                                                     else{
-                                                        if(check_if_added_to_cart(3)){
+                                                        if(check_if_added_to_cart(9)){
                                                             echo '<a href="#" class=btn btn-block btn-success disabled>Added to cart</a>';
                                                         }
                                                         else{
@@ -285,7 +285,7 @@
                                                            echo '<p><a href="login.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p>';
                                                         }
                                                         else{
-                                                            if(check_if_added_to_cart(1)){
+                                                            if(check_if_added_to_cart(10)){
                                                                 echo '<a href="#" class=btn btn-block btn-success disabled>Added to cart</a>';
                                                            }
                                                            else{
@@ -311,7 +311,7 @@
                                                         echo '<p><a href="login.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p>';
                                                     }
                                                     else{
-                                                        if(check_if_added_to_cart(2)){
+                                                        if(check_if_added_to_cart(11)){
                                                             echo '<a href="#" class=btn btn-block btn-success disabled>Added to cart</a>';
                                                         }
                                                         else{
@@ -335,7 +335,7 @@
                                                         echo '<p><a href="login.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p>';
                                                     }
                                                     else{
-                                                        if(check_if_added_to_cart(3)){
+                                                        if(check_if_added_to_cart(12)){
                                                             echo '<a href="#" class=btn btn-block btn-success disabled>Added to cart</a>';
                                                         }
                                                         else{
@@ -362,7 +362,7 @@
                                                            echo '<p><a href="login.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p>';
                                                         }
                                                         else{
-                                                            if(check_if_added_to_cart(1)){
+                                                            if(check_if_added_to_cart(13)){
                                                                 echo '<a href="#" class=btn btn-block btn-success disabled>Added to cart</a>';
                                                            }
                                                            else{
@@ -388,7 +388,7 @@
                                                         echo '<p><a href="login.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p>';
                                                     }
                                                     else{
-                                                        if(check_if_added_to_cart(2)){
+                                                        if(check_if_added_to_cart(14)){
                                                             echo '<a href="#" class=btn btn-block btn-success disabled>Added to cart</a>';
                                                         }
                                                         else{
@@ -412,7 +412,7 @@
                                                         echo '<p><a href="login.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p>';
                                                     }
                                                     else{
-                                                        if(check_if_added_to_cart(3)){
+                                                        if(check_if_added_to_cart(15)){
                                                             echo '<a href="#" class=btn btn-block btn-success disabled>Added to cart</a>';
                                                         }
                                                         else{
@@ -439,7 +439,7 @@
                                                            echo '<p><a href="login.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p>';
                                                         }
                                                         else{
-                                                            if(check_if_added_to_cart(1)){
+                                                            if(check_if_added_to_cart(16)){
                                                                 echo '<a href="#" class=btn btn-block btn-success disabled>Added to cart</a>';
                                                            }
                                                            else{
@@ -465,7 +465,7 @@
                                                         echo '<p><a href="login.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p>';
                                                     }
                                                     else{
-                                                        if(check_if_added_to_cart(2)){
+                                                        if(check_if_added_to_cart(17)){
                                                             echo '<a href="#" class=btn btn-block btn-success disabled>Added to cart</a>';
                                                         }
                                                         else{
@@ -489,7 +489,7 @@
                                                         echo '<p><a href="login.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p>';
                                                     }
                                                     else{
-                                                        if(check_if_added_to_cart(3)){
+                                                        if(check_if_added_to_cart(18)){
                                                             echo '<a href="#" class=btn btn-block btn-success disabled>Added to cart</a>';
                                                         }
                                                         else{
