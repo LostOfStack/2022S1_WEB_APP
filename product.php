@@ -35,10 +35,21 @@
         
     </head>
     <body>
-            
+        
         <div class="main">
         
         <?php
+        $con = mysqli_connect('localhost','root','', 'database');
+        $p_details = "select * from product";
+        $query = mysqli_query($con, $p_details );
+
+        if(mysqli_num_rows($query) > 0)         
+        {  
+            while($data = mysqli_fetch_assoc($query))
+            {
+                $t = $data['type'];
+                $b = $data['brand'];
+               
                 if($page=="laptop"){
                     echo '<Strong>
                     <div class="row">
@@ -46,9 +57,12 @@
                                         <a href="cart.php">
                                             <img src="image/apple laptop.jpg" width ="100%" alt="Apple Laptop">
                                         </a>
-                                            <div class="caption">
-                                                <h3>Apple Laptop</h3>
-                                                <p>Price: RM 9,000</p> </Strong>';
+                                            <div class="caption"></Strong>';
+                                                
+                                            echo'<h2>' .$t. '</h2>';
+                                            echo'<h3>' .$b. '</h3>';
+                                            echo'
+                                                <p>Price: RM 9,000</p> ';
                                                 if(!isset($_SESSION['email'])){ 
                                                    echo '<p><a href="login.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p>';
                                                 }
@@ -483,11 +497,12 @@
                                      echo '</div>';
                              echo '</div>';
                          }
-                        
+                     }
+        }                  
             ?>
                 
             </div>
-            
+                           
         <?php include('includes/footer.php'); ?>
        
     </body>
