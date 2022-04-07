@@ -52,12 +52,12 @@
 
   <div id="myDIV" class="topnav">
     <a class="<?php if($page == "home") {echo "active";} ?>" href = "/2022S1_WEB_APP/index.php">HOME</a>
-    <a class="<?php if($page == "laptop") {echo "active";} ?>" href = "/2022S1_WEB_APP/product.php?page=laptop">LAPTOP</a>
-    <a class="<?php if($page == "desktop") {echo "active";} ?>" href = "/2022S1_WEB_APP/product.php?page=desktop">DESKTOP</a>
-    <a class="<?php if($page == "monitor") {echo "active";} ?>" href = "/2022S1_WEB_APP/product.php?page=monitor">MONITOR</a>
-    <a class="<?php if($page == "mouse") {echo "active";} ?>" href = "/2022S1_WEB_APP/product.php?page=mouse">MOUSE</a>
-    <a class="<?php if($page == "speaker") {echo "active";} ?>" href = "/2022S1_WEB_APP/product.php?page=speaker">SPEAKER</a>
-    <a class="<?php if($page == "smartphone") {echo "active";} ?>" href = "/2022S1_WEB_APP/product.php?page=smartphone">SMARTPHONE</a>
+    <a class="<?php if($page == "laptop") {echo "active";} ?>" href = "/2022S1_WEB_APP/product.php?page=Laptop">LAPTOP</a>
+    <a class="<?php if($page == "desktop") {echo "active";} ?>" href = "/2022S1_WEB_APP/product.php?page=Desktop">DESKTOP</a>
+    <a class="<?php if($page == "monitor") {echo "active";} ?>" href = "/2022S1_WEB_APP/product.php?page=Monitor">MONITOR</a>
+    <a class="<?php if($page == "mouse") {echo "active";} ?>" href = "/2022S1_WEB_APP/product.php?page=Mouse">MOUSE</a>
+    <a class="<?php if($page == "speaker") {echo "active";} ?>" href = "/2022S1_WEB_APP/product.php?page=Speaker">SPEAKER</a>
+    <a class="<?php if($page == "smartphone") {echo "active";} ?>" href = "/2022S1_WEB_APP/product.php?page=Smartphone">SMARTPHONE</a>
   </div>
   <?php 
     if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
