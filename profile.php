@@ -34,8 +34,56 @@
     <head>
         <?php include('includes/header.php'); ?>
         <?php $page = null; include('includes/navigation.php'); ?>
+        <style>
+            #reset{
+                width:100%;
+                height:35px;
+            }
+
+            #reset a:link, #reset a:visited {
+                background-color: black;
+                border-width:2px;
+                border-color: white;
+                border-style: solid;
+                color: white;
+                padding: 14px 25px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+            }
+
+            #reset a:hover, #reset a:active {
+                background-color: rgb(150,150,255);
+                color: black;
+            }
+            input[type=email], input[type=tel], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            }
+
+            input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            }
+
+            input[type=submit]:hover {
+            background-color: #45a049;
+            }
+        </style>
     </head>
     <body>
+        
         <div class="profile01">
             <h1>Profile</h1>
             <img src="/2022S1_WEB_APP/image/profile.jpg" style="border-radius: 25%; width: 150px; height: 150px">
@@ -43,7 +91,7 @@
                 <br>
                 <label for="username"><b>Username</b></label><br>
                 <p><?php echo $username;?></p>
-                <a href="reset-password.php">Reset Your Password</a><br><br>
+                <div id="reset"><a href="reset-password.php">Reset Your Password</a></div><br><br>
                 <label for="email"><b>Email</b></label><br>
                 <input type="email" id="email" name="email" value="<?php echo $email;?>" required><br><br>
                 <label for="phoneNo"><b>Phone Number</b></label><br>
