@@ -15,7 +15,7 @@
             <div class="crop">
                 <a href = "/2022S1_WEB_APP/index.php"><img src="/2022S1_WEB_APP/image/Hardwareology.png" alt="Hardwareology"></a>
             </div>
-            <div class="logout">
+            <div class="login">
                 <a href = "/2022S1_WEB_APP/login.php">Log in</a>
             </div>
         </header>';
