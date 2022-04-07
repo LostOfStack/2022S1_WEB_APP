@@ -1,6 +1,8 @@
 <?php 
 session_start();
 require 'check_if_added.php';
+require 'config.php';
+
  ?>
 <!DOCTYPE html>
 <html>
@@ -88,7 +90,7 @@ require 'check_if_added.php';
                                                 }
                                                 else{
 
-                                                echo '<a href="cart_add.php?id=1" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Add to cart</a>';
+                                                echo '<a href="cart_add.php?id=2" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Add to cart</a>';
                                                 }
                                             }
                                         echo '</div>';
@@ -112,7 +114,7 @@ require 'check_if_added.php';
                                                 }
                                                 else{
 
-                                                echo '<a href="cart_add.php?id=1" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Add to cart</a>';
+                                                echo '<a href="cart_add.php?id=3" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Add to cart</a>';
                                                 }
                                             }
                                         echo '</div>';
@@ -139,7 +141,7 @@ require 'check_if_added.php';
                                                        }
                                                        else{
         
-                                                       echo '<a href="cart_add.php?id=1" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Add to cart</a>';
+                                                       echo '<a href="cart_add.php?id=4" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Add to cart</a>';
                                                        }
                                                     }
                                                echo '</div>';
@@ -165,7 +167,7 @@ require 'check_if_added.php';
                                                     }
                                                     else{
     
-                                                    echo '<a href="cart_add.php?id=1" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Add to cart</a>';
+                                                    echo '<a href="cart_add.php?id=5" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Add to cart</a>';
                                                     }
                                                 }
                                             echo '</div>';
@@ -189,7 +191,7 @@ require 'check_if_added.php';
                                                     }
                                                     else{
     
-                                                    echo '<a href="cart_add.php?id=1" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Add to cart</a>';
+                                                    echo '<a href="cart_add.php?id=6" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Add to cart</a>';
                                                     }
                                                 }
                                             echo '</div>';
@@ -216,7 +218,7 @@ require 'check_if_added.php';
                                                            }
                                                            else{
             
-                                                           echo '<a href="cart_add.php?id=1" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Add to cart</a>';
+                                                           echo '<a href="cart_add.php?id=7" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Add to cart</a>';
                                                            }
                                                         }
                                                    echo '</div>';
@@ -242,7 +244,7 @@ require 'check_if_added.php';
                                                         }
                                                         else{
         
-                                                        echo '<a href="cart_add.php?id=1" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Add to cart</a>';
+                                                        echo '<a href="cart_add.php?id=8" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Add to cart</a>';
                                                         }
                                                     }
                                                 echo '</div>';
@@ -266,7 +268,7 @@ require 'check_if_added.php';
                                                         }
                                                         else{
         
-                                                        echo '<a href="cart_add.php?id=1" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Add to cart</a>';
+                                                        echo '<a href="cart_add.php?id=9" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Add to cart</a>';
                                                         }
                                                     }
                                                 echo '</div>';
@@ -293,7 +295,7 @@ require 'check_if_added.php';
                                                            }
                                                            else{
             
-                                                           echo '<a href="cart_add.php?id=1" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Add to cart</a>';
+                                                           echo '<a href="cart_add.php?id=10" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Add to cart</a>';
                                                            }
                                                         }
                                                    echo '</div>';
@@ -319,7 +321,7 @@ require 'check_if_added.php';
                                                         }
                                                         else{
         
-                                                        echo '<a href="cart_add.php?id=1" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Add to cart</a>';
+                                                        echo '<a href="cart_add.php?id=11" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Add to cart</a>';
                                                         }
                                                     }
                                                 echo '</div>';
@@ -343,7 +345,7 @@ require 'check_if_added.php';
                                                         }
                                                         else{
         
-                                                        echo '<a href="cart_add.php?id=1" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Add to cart</a>';
+                                                        echo '<a href="cart_add.php?id=12" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Add to cart</a>';
                                                         }
                                                     }
                                                 echo '</div>';
@@ -370,7 +372,7 @@ require 'check_if_added.php';
                                                            }
                                                            else{
             
-                                                           echo '<a href="cart_add.php?id=1" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Add to cart</a>';
+                                                           echo '<a href="cart_add.php?id=13" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Add to cart</a>';
                                                            }
                                                         }
                                                    echo '</div>';
@@ -396,7 +398,7 @@ require 'check_if_added.php';
                                                         }
                                                         else{
         
-                                                        echo '<a href="cart_add.php?id=1" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Add to cart</a>';
+                                                        echo '<a href="cart_add.php?id=14" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Add to cart</a>';
                                                         }
                                                     }
                                                 echo '</div>';
@@ -420,7 +422,7 @@ require 'check_if_added.php';
                                                         }
                                                         else{
         
-                                                        echo '<a href="cart_add.php?id=1" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Add to cart</a>';
+                                                        echo '<a href="cart_add.php?id=15" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Add to cart</a>';
                                                         }
                                                     }
                                                 echo '</div>';
@@ -447,7 +449,7 @@ require 'check_if_added.php';
                                                            }
                                                            else{
             
-                                                           echo '<a href="cart_add.php?id=1" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Add to cart</a>';
+                                                           echo '<a href="cart_add.php?id=16" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Add to cart</a>';
                                                            }
                                                         }
                                                    echo '</div>';
@@ -473,7 +475,7 @@ require 'check_if_added.php';
                                                         }
                                                         else{
         
-                                                        echo '<a href="cart_add.php?id=1" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Add to cart</a>';
+                                                        echo '<a href="cart_add.php?id=17" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Add to cart</a>';
                                                         }
                                                     }
                                                 echo '</div>';
@@ -497,7 +499,7 @@ require 'check_if_added.php';
                                                         }
                                                         else{
         
-                                                        echo '<a href="cart_add.php?id=1" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Add to cart</a>';
+                                                        echo '<a href="cart_add.php?id=18" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Add to cart</a>';
                                                         }
                                                     }
                                                 echo '</div>';
