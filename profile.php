@@ -43,6 +43,7 @@
                 <br>
                 <label for="username"><b>Username</b></label><br>
                 <p><?php echo $username;?></p>
+                <a href="reset-password.php">Reset Your Password</a><br><br>
                 <label for="email"><b>Email</b></label><br>
                 <input type="email" id="email" name="email" value="<?php echo $email;?>" required><br><br>
                 <label for="phoneNo"><b>Phone Number</b></label><br>
