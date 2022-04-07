@@ -80,19 +80,46 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <style>
         body{ font: 14px sans-serif; }
         .wrapper{
-            width: 100%; 
+            width: 30%; 
             padding: 20px;
             margin-top: 150px;
             margin-left: auto;
             margin-right: auto;
             padding: 10px;
             position: static;
-            /* border-style: solid;
+            border-style: solid;
             border-color: black;
             border-width: 1px;
             border-radius: 30px;
-            background-color: white; */
+            background-color: white;
             text-align: center;
+        }
+        input[type=text], input[type=password], select {
+            width: 80%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            }
+
+            input[type=submit] {
+            width: 50%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            }
+
+            input[type=submit]:hover {
+            background-color: #45a049;
+        }
+        .invalid-feedback{
+            color:tomato;
         }
     </style>
 </head>
@@ -103,17 +130,17 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         <p>Please fill out this form to reset your password.</p>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post"> 
             <div class="form-group">
-                <label>New Password</label>
-                <input type="password" name="new_password" class="form-control <?php echo (!empty($new_password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $new_password; ?>">
+                <label>New Password</label><br>
+                <input type="password" name="new_password" class="form-control <?php echo (!empty($new_password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $new_password; ?>"><br>
                 <span class="invalid-feedback"><?php echo $new_password_err; ?></span>
             </div><br><br>
             <div class="form-group">
-                <label>Confirm Password</label>
-                <input type="password" name="confirm_password" class="form-control <?php echo (!empty($confirm_password_err)) ? 'is-invalid' : ''; ?>">
+                <label>Confirm Password</label><br>
+                <input type="password" name="confirm_password" class="form-control <?php echo (!empty($confirm_password_err)) ? 'is-invalid' : ''; ?>"><br>
                 <span class="invalid-feedback"><?php echo $confirm_password_err; ?></span>
             </div><br><br>
             <div class="form-group">
-                <input type="submit" class="btn btn-primary" value="Submit">
+                <input type="submit" class="btn btn-primary" value="Submit"><br>
                 <a class="btn btn-link ml-2" href="profile.php">Cancel</a>
             </div>
         </form>
