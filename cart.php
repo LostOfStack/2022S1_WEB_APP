@@ -1,9 +1,9 @@
 <?php
-    session_start();
     require 'config.php';
-    if(!isset($_SESSION["loggedin"])){
-        header('location: login.php');
-    }
+    include('includes/header.php');
+    // if(!isset($_SESSION["loggedin"])){
+    //     header('location: login.php');
+    // }
     $user_id=$_SESSION['id'];
     $user_products_query="select it.id,it.name,it.price from user_items ut inner join product it on it.id=ut.item_id where ut.user_id='$user_id'";
     $user_products_result=mysqli_query($con,$user_products_query) or die(mysqli_error($con));
@@ -26,7 +26,7 @@
     <head>
     </head>
     <body>
-        <?php include('includes/header.php'); ?>
+        
         <?php $page = null; include('includes/navigation.php'); ?>
 
         
