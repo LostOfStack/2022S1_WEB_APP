@@ -59,7 +59,12 @@ session_start();
     <?php $page = "home"; include('includes/navigation.php'); ?>
 
     <div class="myhome">
-        <h1>Home</h1>
+        <?php 
+            if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true)
+                echo '<h1>Welcome, our guest!</h1>';
+            else
+                echo '<h1>Welcome, <b>'.htmlspecialchars($_SESSION["username"]).'</b>!!!</h1>';
+        ?>
         <h1 style="font-size:100px;text-align:center;">Our Main Product</h1>
     </div>
     <div class="rowhome">
