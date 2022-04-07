@@ -57,7 +57,7 @@ require 'config.php';
                                                 <h3>MacBookPro13"</h3>
                                                 <p>Price: RM 5,599</p> </Strong>';
                                                 
-                                                if(!isset($_SESSION['email'])){ 
+                                                if(!isset($_SESSION["loggedin"])){ 
                                                    echo '<p><a href="login.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p>';
                                                 }
                                                 else{
@@ -81,7 +81,7 @@ require 'config.php';
                                             <h3>Aspire 3 "</h3>
                                             <p>Price: RM 2,099</p></Strong>';
                                             
-                                            if(!isset($_SESSION['email'])){ 
+                                            if(!isset($_SESSION["loggedin"])){ 
                                                 echo '<p><a href="login.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p>';
                                             }
                                             else{
@@ -105,7 +105,7 @@ require 'config.php';
                                             <h2>DELL</h2>
                                             <h3>New XPS 17 Laptop"</h3>
                                             <p>Price: RM 9,945</p></Strong>';
-                                            if(!isset($_SESSION['email'])){ 
+                                            if(!isset($_SESSION["loggedin"])){ 
                                                 echo '<p><a href="login.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p>';
                                             }
                                             else{
@@ -132,7 +132,7 @@ require 'config.php';
                                                     <h2>APPLE</h2>
                                                     <h3>iMac 24" </h3>
                                                     <p>Price: RM 7,249</p> </Strong>';
-                                                    if(!isset($_SESSION['email'])){ 
+                                                    if(!isset($_SESSION["loggedin"])){ 
                                                        echo '<p><a href="login.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p>';
                                                     }
                                                     else{
@@ -158,7 +158,7 @@ require 'config.php';
                                                 <h3>Acer Aspire AXC895-10400F "</h3>
                                                 <p>Price: RM 1,900</p></Strong>';
                                                 
-                                                if(!isset($_SESSION['email'])){ 
+                                                if(!isset($_SESSION["loggedin"])){ 
                                                     echo '<p><a href="login.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p>';
                                                 }
                                                 else{
@@ -182,7 +182,7 @@ require 'config.php';
                                                 <h2>DELL</h2>
                                                 <h3>New Inspiron Compact Desktop "</h3>
                                                 <p>Price: RM 2,099</p></Strong>';
-                                                if(!isset($_SESSION['email'])){ 
+                                                if(!isset($_SESSION["loggedin"])){ 
                                                     echo '<p><a href="login.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p>';
                                                 }
                                                 else{
@@ -209,7 +209,7 @@ require 'config.php';
                                                         <h2>AOC</h2>
                                                         <h3>AGON 27" Premium Gaming Monitor "</h3>
                                                         <p>Price: RM 900</p> </Strong>';
-                                                        if(!isset($_SESSION['email'])){ 
+                                                        if(!isset($_SESSION["loggedin"])){ 
                                                            echo '<p><a href="login.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p>';
                                                         }
                                                         else{
@@ -235,7 +235,7 @@ require 'config.php';
                                                     <h3>Dell 23" Full HD Monitor P2317H "</h3>
                                                     <p>Price: RM 500</p></Strong>';
                                                     
-                                                    if(!isset($_SESSION['email'])){ 
+                                                    if(!isset($_SESSION["loggedin"])){ 
                                                         echo '<p><a href="login.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p>';
                                                     }
                                                     else{
@@ -259,7 +259,7 @@ require 'config.php';
                                                     <h2>SAMSUNG</h2>
                                                     <h3>24" Flat T35 Series "</h3>
                                                     <p>Price: RM 700</p></Strong>';
-                                                    if(!isset($_SESSION['email'])){ 
+                                                    if(!isset($_SESSION["loggedin"])){ 
                                                         echo '<p><a href="login.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p>';
                                                     }
                                                     else{
@@ -286,7 +286,7 @@ require 'config.php';
                                                         <h2>Glorious</h2>
                                                         <h3>Glorious Model O Gaming Mouse</h3>
                                                         <p>Price: RM 330</p> </Strong>';
-                                                        if(!isset($_SESSION['email'])){ 
+                                                        if(!isset($_SESSION["loggedin"])){ 
                                                            echo '<p><a href="login.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p>';
                                                         }
                                                         else{
@@ -312,7 +312,7 @@ require 'config.php';
                                                     <h3>Logitech G502 Hero </h3>
                                                     <p>Price: RM 300</p></Strong>';
                                                     
-                                                    if(!isset($_SESSION['email'])){ 
+                                                    if(!isset($_SESSION["loggedin"])){ 
                                                         echo '<p><a href="login.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p>';
                                                     }
                                                     else{
@@ -336,7 +336,7 @@ require 'config.php';
                                                     <h2>RAZER</h2>
                                                     <h3>Razer DeathAdder V2 Pro</h3>
                                                     <p>Price: RM 700</p></Strong>';
-                                                    if(!isset($_SESSION['email'])){ 
+                                                    if(!isset($_SESSION["loggedin"])){ 
                                                         echo '<p><a href="login.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p>';
                                                     }
                                                     else{
@@ -363,7 +363,7 @@ require 'config.php';
                                                         <h2>SONY </h2>
                                                         <h3>XB13 EXTRA BASS™ Portable Wireless Speaker </h3>
                                                         <p>Price: RM 230</p> </Strong>';
-                                                        if(!isset($_SESSION['email'])){ 
+                                                        if(!isset($_SESSION["loggedin"])){ 
                                                            echo '<p><a href="login.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p>';
                                                         }
                                                         else{
@@ -389,7 +389,7 @@ require 'config.php';
                                                     <h3>ACTON II BLUETOOTH </h3>
                                                     <p>Price: RM 1,200</p></Strong>';
                                                     
-                                                    if(!isset($_SESSION['email'])){ 
+                                                    if(!isset($_SESSION["loggedin"])){ 
                                                         echo '<p><a href="login.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p>';
                                                     }
                                                     else{
@@ -413,7 +413,7 @@ require 'config.php';
                                                     <h3>JBL</h3>
                                                     <h3>JBL Flip 5 </h3>
                                                     <p>Price: RM 649</p></Strong>';
-                                                    if(!isset($_SESSION['email'])){ 
+                                                    if(!isset($_SESSION["loggedin"])){ 
                                                         echo '<p><a href="login.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p>';
                                                     }
                                                     else{
@@ -440,7 +440,7 @@ require 'config.php';
                                                         <h2>APPLE</h2>
                                                         <h3>IPHONE 13</h3>
                                                         <p>Price: RM 3,899</p> </Strong>';
-                                                        if(!isset($_SESSION['email'])){ 
+                                                        if(!isset($_SESSION["loggedin"])){ 
                                                            echo '<p><a href="login.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p>';
                                                         }
                                                         else{
@@ -466,7 +466,7 @@ require 'config.php';
                                                     <h3>Samsung Galaxy S21</h3>
                                                     <p>Price: RM 3,199</p></Strong>';
                                                     
-                                                    if(!isset($_SESSION['email'])){ 
+                                                    if(!isset($_SESSION["loggedin"])){ 
                                                         echo '<p><a href="login.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p>';
                                                     }
                                                     else{
@@ -490,7 +490,7 @@ require 'config.php';
                                                     <h2>HUAWEI</h2>
                                                     <h3>HUAWEI P50 Pro</h3>
                                                     <p>Price: RM 4,199</p></Strong>';
-                                                    if(!isset($_SESSION['email'])){ 
+                                                    if(!isset($_SESSION["loggedin"])){ 
                                                         echo '<p><a href="login.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p>';
                                                     }
                                                     else{
