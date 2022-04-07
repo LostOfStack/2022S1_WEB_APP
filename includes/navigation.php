@@ -20,7 +20,7 @@
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  width: 10%;
+  width: 175px;
 }
 
 .topnav a:hover {
