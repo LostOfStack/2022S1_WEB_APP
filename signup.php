@@ -128,55 +128,82 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <style>
         body{ font: 14px sans-serif; }
         .wrapper{
-        width: 100%; 
+        width: 30%; 
         padding: 20px;
         margin-top: 150px;
         margin-left: auto;
         margin-right: auto;
         padding: 10px;
         position: static;
-        /* border-style: solid;
+        border-style: solid;
         border-color: black;
         border-width: 1px;
         border-radius: 30px;
-        background-color: white; */
+        background-color: white;
         text-align: center;
+        }
+        input[type=text], input[type=password], input[type=tel], input[type=email], select {
+            width: 80%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            }
+
+            input[type=submit] {
+            width: 80%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            }
+
+            input[type=submit]:hover {
+            background-color: #45a049;
+        }
+        .invalid-feedback{
+            color:tomato;
         }
     </style>
 </head>
 <body>
     <?php include('includes/header.php'); ?>
     <div class="wrapper">
-        <h2>Sign Up</h2><br>
+        <h1>Sign Up</h1><br>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div class="form-group">
-                <label>Username</label>
-                <input type="text" name="username" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
+                <label><b>Username</b></label><br>
+                <input type="text" name="username" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>"><br>
                 <span class="invalid-feedback"><?php echo $username_err; ?></span>
             </div><br>    
             <div class="form-group">
-                <label>Password</label>
-                <input type="password" name="password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $password; ?>">
+                <label><b>Password</b></label><br>
+                <input type="password" name="password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $password; ?>"><br>
                 <span class="invalid-feedback"><?php echo $password_err; ?></span>
             </div><br>
             <div class="form-group">
-                <label>Confirm Password</label>
-                <input type="password" name="confirm_password" class="form-control <?php echo (!empty($confirm_password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $confirm_password; ?>">
+                <label><b>Confirm Password</b></label><br>
+                <input type="password" name="confirm_password" class="form-control <?php echo (!empty($confirm_password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $confirm_password; ?>"><br>
                 <span class="invalid-feedback"><?php echo $confirm_password_err; ?></span>
             </div><br>
             <div class="form-group">
-                <label>Email</label>
-                <input type="email" name="email" class="form-control <?php echo (!empty($email_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $email; ?>">
+                <label><b>Email</b></label><br>
+                <input type="email" name="email" class="form-control <?php echo (!empty($email_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $email; ?>" placeholder="email@example.com"><br>
                 <span class="invalid-feedback"><?php echo $email_err; ?></span>
             </div><br>
             <div class="form-group">
-                <label>Phone Number</label>
+                <label><b>Phone Number</b></label><br>
                 <input type="tel" name="phoneNo" class="form-control <?php echo (!empty($phone_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $phone; ?>" placeholder="012-3456789" 
-                pattern="[0-9]{3}-[0-9]{8}||[0-9]{3}-[0-9]{7}">
+                pattern="[0-9]{3}-[0-9]{8}||[0-9]{3}-[0-9]{7}"><br>
                 <span class="invalid-feedback"><?php echo $phone_err; ?></span>
             </div><br>
             <div class="form-group">
-                <label>Gender</label>
+                <label><b>Gender</b></label><br>
                 <input type="radio" id="male" name="gender" value="male">
                 <label for="male">Male</label>
                 <input type="radio" id="female" name="gender" value="female">

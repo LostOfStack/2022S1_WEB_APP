@@ -109,7 +109,7 @@
             text-align: center;
         }
         input[type=text], input[type=password], select {
-            width: 100%;
+            width: 80%;
             padding: 12px 20px;
             margin: 8px 0;
             display: inline-block;
@@ -119,7 +119,7 @@
             }
 
             input[type=submit] {
-            width: 100%;
+            width: 80%;
             background-color: #4CAF50;
             color: white;
             padding: 14px 20px;
@@ -131,6 +131,9 @@
 
             input[type=submit]:hover {
             background-color: #45a049;
+        }
+        .invalid-feedback{
+            color:tomato;
         }
 
     </style>
@@ -147,13 +150,13 @@
 
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div class="form-group">
-                <label>Username</label>
-                <input type="text" name="username" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
+                <label>Username</label><br>
+                <input type="text" name="username" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>"><br>
                 <span class="invalid-feedback"><?php echo $username_err; ?></span>
             </div><br>    
             <div class="form-group">
-                <label>Password</label>
-                <input type="password" name="password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>">
+                <label>Password</label><br>
+                <input type="password" name="password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>"><br>
                 <span class="invalid-feedback"><?php echo $password_err; ?></span>
             </div><br>
             <div class="form-group">

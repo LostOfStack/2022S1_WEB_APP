@@ -57,7 +57,7 @@
                 color: black;
             }
             input[type=email], input[type=tel], select {
-            width: 100%;
+            width: 50%;
             padding: 12px 20px;
             margin: 8px 0;
             display: inline-block;
@@ -67,7 +67,7 @@
             }
 
             input[type=submit] {
-            width: 100%;
+            width: 50%;
             background-color: #4CAF50;
             color: white;
             padding: 14px 20px;
