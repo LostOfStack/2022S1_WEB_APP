@@ -6,11 +6,11 @@
 }
 
 .topnav {
-  overflow: hidden;
   background-color: #333;
   position: fixed; /* Set the navbar to fixed position */
   top: 80px; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
+  padding-right:100px;
 }
 
 .topnav a {
@@ -21,6 +21,8 @@
   text-decoration: none;
   font-size: 17px;
   width: 175px;
+  border-right: groove white 1px;
+  border-bottom: groove white 1px;
 }
 
 .topnav a:hover {
@@ -35,7 +37,7 @@
 
 .logo{
   position: fixed;
-  right: 50px;
+  right: 25px;
   top: 80px;
   
 }
