@@ -13,11 +13,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <?php include('includes/header.php'); ?>
 </head>
 <body>
         <div>
-           
-             <?php include('includes/header.php'); ?>
             
             <br>
             <div class="container">

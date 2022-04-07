@@ -5,19 +5,24 @@ body{
     /* padding-top: 100px; */
     /* margin: 100px; */
 }
+h1{
+    font-size:64px;
+    text-align: center;
+}
+
 .myhome{
     margin-top: 130px;
     font-size: 5em;
  }
- .columnhome {
+.columnhome {
 
     float: left;
     width: 33.33%;
     padding: 5px;
     box-sizing: border-box
   }
-  .rowhome::after {
 
+.rowhome::after {
     content: "";
     clear: both;
     display: table;
@@ -45,6 +50,7 @@ body{
     padding: 10px;
     position: static;
 }
+
 * {
     box-sizing: border-box;
 }
