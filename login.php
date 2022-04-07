@@ -132,6 +132,28 @@
             input[type=submit]:hover {
             background-color: #45a049;
         }
+        #guest{
+                width:100%;
+                height:35px;
+            }
+
+            #guest a:link, #guest a:visited {
+                background-color: black;
+                border-width:2px;
+                border-color: white;
+                border-style: solid;
+                border-radius: 4px;
+                color: white;
+                padding: 14px 120px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+            }
+
+            #guest a:hover, #guest a:active {
+                background-color: rgb(150,150,255);
+                color: black;
+            }
         .invalid-feedback{
             color:tomato;
         }
@@ -141,10 +163,10 @@
 <body>
     <?php include('includes/header.php'); ?>
     <div class="wrapper">
-        <h1>Login</h1><br>
+        <h1>Login</h1>
         <?php 
         if(!empty($login_err)){
-            echo '<div class="alert alert-danger">' . $login_err . '</div>';
+            echo '<div class="invalid-feedback"><b>' . $login_err . '</b></div><br>';
         }        
         ?>
 
@@ -162,6 +184,9 @@
             <div class="form-group">
                 <input type="submit" class="btn btn-primary" value="Login">
             </div>
+            <div class="form-group" id="guest">
+                <a href = "/2022S1_WEB_APP/index.php">Login as a guest</a>
+            </div><br>
             <p>Don't have an account? <a href="signup.php">Sign up now</a>.</p>
         </form>
     </div>

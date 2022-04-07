@@ -45,6 +45,7 @@
                 border-width:2px;
                 border-color: white;
                 border-style: solid;
+                border-radius: 10px;
                 color: white;
                 padding: 14px 25px;
                 text-align: center;
