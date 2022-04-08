@@ -66,7 +66,7 @@
                 <table class="table table-bordered table-striped" width='100%' border=1>
                     <tbody>
                         <tr>
-                            <th>Item Number</th><th>Item Name</th><th>Price</th><th></th>
+                            <th>Item Number</th><th>Item Name</th><th>Price (RM)</th><th></th>
                         </tr>
                        <?php 
                         $user_products_result=mysqli_query($con,$user_products_query) or die(mysqli_error($con));
