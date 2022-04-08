@@ -12,7 +12,7 @@
 </head>
 <body>
     
-    <div style="margin-left:50px; margin-right:50px;">
+    <div style="margin-left:120px; margin-right:50px;">
         <?php 
             if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true)
                 echo '<h1>Welcome, our guest!</h1>';
@@ -26,7 +26,6 @@
             <a href="/2022S1_WEB_APP/product.php?page=laptop">
             <img src="image/modifiedapple.png" alt="LaptopPage" style="width:70%;height:100%;">
             </a>
-            </p>
             </div>
             <div class="columnhome">
             <a href="/2022S1_WEB_APP/product.php?page=desktop">
@@ -57,7 +56,6 @@
             <a href="/2022S1_WEB_APP/product.php?page=smartphone">
             <img src="image/modifiedphone.png" alt="SmartPhonePage" style="width:70%;height:100%;">
             </a>
-            </p>
             </div>
             <div class="columnhome">
             <a href="/2022S1_WEB_APP/product.php?page=mouse">
@@ -87,7 +85,6 @@
             <div class="columnhome">
             <img src="image/cash2.png" alt="CashLogo" style="width:55%;height:100%;">
             </a>
-            </p>
             </div>
             <div class="columnhome">
             <img src="image/Clock.png" alt="CashLogo" style="width:40%;height:100%;">
