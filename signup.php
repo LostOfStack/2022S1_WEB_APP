@@ -1,7 +1,7 @@
 <?php
 // Include config file
 require_once "config.php";
-session_start(); 
+
 // Define variables and initialize with empty values
 $username = $password = $confirm_password = $email = $phone = $gender = "";
 $username_err = $password_err = $confirm_password_err = $email_err = $phone_err = $gender_err = "";
