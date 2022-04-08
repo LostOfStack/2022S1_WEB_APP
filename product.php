@@ -35,8 +35,10 @@ $numRow = mysqli_num_rows($result);
                 box-sizing: border-box;
                 float:left;
                 width:100%;
-                height:400px;
+                height:370px;
                 background-color:white;
+                margin-top:10px;
+                margin-bottom:10px;
             }
             .pimg{
                 box-sizing: border-box;
@@ -44,7 +46,6 @@ $numRow = mysqli_num_rows($result);
                 width:380px;
                 height:380px;
                 margin:auto;
-                border:solid;
             }
             .pimg img{
                 max-width:360px;
@@ -53,18 +54,19 @@ $numRow = mysqli_num_rows($result);
                 max-height:360px;
             }
             .ptextbox2{
+                text-align:center;
+                padding:10px;
                 margin:auto;
                 box-sizing: border-box;
                 float:right;
-                border:solid;
                 height:380px;
                 width:200px;
             }
             .ptextbox{
+                padding:10px;
                 margin:auto;
                 box-sizing: border-box;
                 float:left;
-                border:solid;
                 height:380px;
                 width:600px;
             }
@@ -82,8 +84,7 @@ $numRow = mysqli_num_rows($result);
                 elseif ($page=="Monitor"){echo "<h1>Monitors</h1>";}
             ?>
             <?php
-                echo '<div class="pcontainer">';?>
-            <?php
+                echo '<div class="pcontainer">';
                 while($row = mysqli_fetch_array($result)){
                     echo '
                         <div class="pbox">
@@ -98,7 +99,7 @@ $numRow = mysqli_num_rows($result);
                                 <p>'.$row['description'].'</p>
                             </div>
                             <div class="ptextbox2">
-                                <p>Price: RM'.$row['price'].'</p>';
+                                <h3>Price: RM'.$row['price'].'</h3>';
                                 if(!isset($_SESSION["loggedin"])){
                                     echo '<p><a href="login.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p>';
                                 }else{
