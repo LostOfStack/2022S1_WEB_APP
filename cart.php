@@ -24,10 +24,26 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Cart</title>
     </head>
     <body>
         <style>
             td{
+                text-align: center;
+            }
+            .wrapper{
+                width: 80%; 
+                padding: 20px;
+                margin-top: 150px;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 10px;
+                position: static;
+                border-style: solid;
+                border-color: black;
+                border-width: 1px;
+                border-radius: 10px;
+                background-color: white;
                 text-align: center;
             }
         </style>
@@ -35,11 +51,12 @@
         <?php $page = null; include('includes/navigation.php'); ?>
 
         
-        <h1>Shopping Cart</h1>
+        
 
         <br>
-            <div id="table">
-                <table class="table table-bordered table-striped" width='80%' border=1>
+            <div class="wrapper">
+                <h1>Shopping Cart</h1>
+                <table class="table table-bordered table-striped" width='100%' border=1>
                     <tbody>
                         <tr>
                             <th>Item Number</th><th>Item Name</th><th>Price</th><th></th>
@@ -57,7 +74,7 @@
                         </tr>
                        <?php $counter=$counter+1;}?>
                         <tr>
-                            <th></th><th>Total</th><th>Rs <?php echo $sum;?>/-</th><th><a href="confirmpayment.php?id=<?php echo $user_id?>" class="btn btn-primary">Confirm Order</a></th>
+                            <th></th><th>Total</th><th>RM <?php echo $sum;?>/-</th><th><a href="confirmpayment.php?id=<?php echo $user_id?>" class="btn btn-primary">Confirm Order</a></th>
                         </tr>
                     </tbody>
                 </table>

@@ -32,6 +32,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Profile</title>
         <?php include('includes/header.php'); ?>
         <?php $page = null; include('includes/navigation.php'); ?>
         <style>
