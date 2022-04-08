@@ -92,7 +92,7 @@ $numRow = mysqli_num_rows($result);
             background-color: #5cb85c;
             border-color: #4cae4c;
             }
-            .btn-success:focus,{
+            .btn-success:focus{
             color: #fff;
             background-color: #449d44;
             border-color: #255625;
@@ -128,7 +128,7 @@ $numRow = mysqli_num_rows($result);
             background-color: #27272b;
             border-color: #27272b;
             }
-            .btn-primary:active,{
+            .btn-primary:active{
             color: #fff;
             background-color: #27272b;
             border-color:#27272b;
