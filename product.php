@@ -1,4 +1,5 @@
 <?php 
+session_start();
 require 'check_if_added.php';
 require 'config.php';
 $page = $_GET["page"];
@@ -30,82 +31,6 @@ $numRow = mysqli_num_rows($result);
                 margin-right:auto;
                 padding:10px;
             }
-<<<<<<< HEAD
-            .pbox{
-                box-sizing: border-box;
-                float:left;
-                width:100%;
-                height:370px;
-                background-color:white;
-                margin-top:10px;
-                margin-bottom:10px;
-            }
-            .pimg{
-                box-sizing: border-box;
-                float:left;
-                width:380px;
-                height:380px;
-                margin:auto;
-            }
-            .pimg img{
-                max-width:360px;
-                width:auto;
-                height:auto;
-                max-height:360px;
-            }
-            .ptextbox2{
-                text-align:center;
-                padding:10px;
-                margin:auto;
-                box-sizing: border-box;
-                float:right;
-                height:380px;
-                width:200px;
-            }
-            .ptextbox{
-                padding:10px;
-                margin:auto;
-                box-sizing: border-box;
-                float:left;
-                height:380px;
-                width:600px;
-            }
-            .btn {
-                text-decoration: none;
-                font-size: 1.5rem;
-                position: relative;
-                margin: 32px;
-            }
-            .btn-primary{
-                background: #000;
-                color: #fff;
-                border-radius: 1000px;
-                transition: transform 0.3s ease;
-            }
-            .btn-primary::after, .btn-primary::before{
-                content:"";
-                position: absolute;
-                opacity: 0.3;
-                background: #000;
-                border-radius: inherit;
-                width: 100%;
-                height: 100%;
-                left:0;
-                bottom: 0;
-                z-index: -1;
-                transition: transform 0.3 ease;
-            }
-            .btn-primary:hover{
-                transform: translate(-12px,-12px);
-            }
-            .btn-primary:hover::after{
-                transform: translate(4px,4px);
-            }
-            .btn-primary:hover::before{
-                transform: translate(7px,7px);
-            }
-=======
->>>>>>> 15403bc217c9bbfd9d6e5a4f779c68edb3ab3d2f
         </style>
     </head>
     <body>

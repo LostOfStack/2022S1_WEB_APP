@@ -10,7 +10,6 @@
     // Define variables and initialize with empty values
     $username = $password = "";
     $username_err = $password_err = $login_err = "";
-    
     // Processing form data when form is submitted
     if($_SERVER["REQUEST_METHOD"] == "POST"){
     
@@ -52,7 +51,7 @@
                         if(mysqli_stmt_fetch($stmt)){
                             if(password_verify($password, $hashed_password)){
                                 // Password is correct, so start a new session
-                                //session_start();
+                                session_start();
                                 
                                 // Store data in session variables
                                 $_SESSION["loggedin"] = true;
@@ -61,7 +60,8 @@
                                 if($_SESSION["id"] == 1){//is admin
                                     header("location: updateproduct.php");
                                 }else{// Redirect user to home page
-                                header("location: index.php");
+                                    $_SESSION["loggedin"] = true;
+                                    header("location: index.php");
                                 }
                             } else{
                                 // Password is not valid, display a generic error message

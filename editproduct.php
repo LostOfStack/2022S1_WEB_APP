@@ -16,7 +16,7 @@ if(isset($_POST['update']))
 
 		
 	// update announcement data
-	$result = mysqli_query($mysqli, "UPDATE product SET ptype='$ptype',brand='$brand',pname='$pname',price='$price', pdescription='$pdescription', quantity='$quantity', img_directory='img_directory' WHERE id=$id");
+	$result = mysqli_query($con, "UPDATE product SET ptype='$ptype',brand='$brand',pname='$pname',price='$price', pdescription='$pdescription', quantity='$quantity', img_directory='img_directory' WHERE id=$id");
 	
 	// Redirect to homepage to display updated announcement in list
 	header("Location: updateproduct.php");
@@ -56,7 +56,7 @@ $row = mysqli_fetch_assoc($result);
             <tr> 
 				<td>Type of Product</td>
 				<td>
-				<select name="type">
+				<select name="ptype">
 						<option value="Laptop" <?php if($ptype == 'Laptop') echo "selected";?>>Laptop</option>
 						<option value="Desktop" <?php if($ptype == 'Desktop') echo "selected";?>>Desktop</option>
 						<option value="Monitor" <?php if($ptype == 'Monitor') echo "selected";?>>Monitor</option>
@@ -68,19 +68,19 @@ $row = mysqli_fetch_assoc($result);
 			</tr>
 			<tr> 
 				<td>Brand</td>
-				<td><input type="text" name="brand" value=<?php echo $brand;?>></td>
+				<td><input type="text" name="brand" value="<?php echo $brand;?>"></td>
 			</tr>
 			<tr> 
             <tr> 
                 <td>Product Name</td>
-                <td><input type="text" name="pname" value=<?php echo $pname;?>></td>
+                <td><input type="text" name="pname" value="<?php echo $pname;?>"></td>
             </tr>
 				<td>Price</td>
 				<td><input type="text" name="price" value=<?php echo $price;?>></td>
 			</tr>
             <tr> 
 				<td>Product Description</td>
-				<td><input type="text" name="pdescription" value=<?php echo $pdescription;?>></td>
+				<td><input type="text" name="pdescription" value="<?php echo $pdescription;?>"></td>
 			</tr>
             <tr> 
 				<td>Quantity</td>
@@ -88,7 +88,7 @@ $row = mysqli_fetch_assoc($result);
 			</tr>
             <tr> 
 				<td>Image Directory</td>
-				<td><input type="text" name="img_directory" value=<?php echo $img_directory;?>></td>
+				<td><input type="text" name="img_directory" value="<?php echo $img_directory;?>"></td>
 			</tr>			
 			<tr>
 				<td><input type="hidden" name="id" value=<?php echo $_GET['id'];?>></td>
