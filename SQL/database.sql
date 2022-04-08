@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS `product` (
   `name` varchar(100) NOT NULL,
   `price` double NOT NULL,
   `description` varchar(1000) NOT NULL,
-  `quantiy` int(11) NOT NULL,
+  `quantity` int(11) NOT NULL,
   `img_directory` varchar(100) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=19 DEFAULT CHARSET=utf8;
