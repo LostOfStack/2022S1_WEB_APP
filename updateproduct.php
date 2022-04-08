@@ -27,7 +27,7 @@ $result = mysqli_query($con, $sql);
                 echo "<td>".$row['description']."</td>";
                 echo "<td>".$row['quantity']."</td>";
                 echo "<td>".$row['img_directory']."</td>";
-                echo "<td><a href='edit.php?id=".$row['id']."'>Edit</a> | <a href='delete.php?id=".$row['id']."'>Delete</a></td></tr>";
+                echo "<td><a href='edit.php?id=".$row['id']."'>Edit</a> | <a href='deleteproduct.php?id=".$row['id']."'>Delete</a></td></tr>";
             }
         ?>
         </table>
