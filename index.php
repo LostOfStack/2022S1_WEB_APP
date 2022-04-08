@@ -24,18 +24,18 @@
     <div class="rowhome">
             <div class="columnhome">
             <a href="/2022S1_WEB_APP/product.php?page=laptop">
-            <img src="image/apple laptop.jpg" alt="LaptopPage" style="width:70%;height:100%;">
+            <img src="image/modifiedapple.png" alt="LaptopPage" style="width:70%;height:100%;">
             </a>
             </p>
             </div>
             <div class="columnhome">
             <a href="/2022S1_WEB_APP/product.php?page=desktop">
-            <img src="image/dell desktop.jpg" alt="DesktopPage" style="width:70%;height:100%;">
+            <img src="image/modifieddesktop.png" alt="DesktopPage" style="width:70%;height:100%;">
             </a>
             </div>
             <div class="columnhome">
             <a href="/2022S1_WEB_APP/product.php?page=monitor">
-            <img src="image/aoc monitor.jpg" alt="MonitorPage" style="width:70%;height:100%;">
+            <img src="image/modifiedmonitor.png" alt="MonitorPage" style="width:70%;height:100%;">
             </a>
             </div>
         </div>
@@ -55,18 +55,18 @@
     <div class="rowhome">
             <div class="columnhome">
             <a href="/2022S1_WEB_APP/product.php?page=smartphone">
-            <img src="image/huawei.jpg" alt="SmartPhonePage" style="width:70%;height:100%;">
+            <img src="image/modifiedphone.png" alt="SmartPhonePage" style="width:70%;height:100%;">
             </a>
             </p>
             </div>
             <div class="columnhome">
             <a href="/2022S1_WEB_APP/product.php?page=mouse">
-            <img src="image/glorious mouse.jpg" alt="MousePage" style="width:70%;height:100%;">
+            <img src="image/modifiedmouse.png" alt="MousePage" style="width:70%;height:100%;">
             </a>
             </div>
             <div class="columnhome">
             <a href="/2022S1_WEB_APP/product.php?page=speaker">
-            <img src="image/jbl speaker.jpg" alt="SpeakerPage" style="width:70%;height:100%;">
+            <img src="image/modifiedspeaker.png" alt="SpeakerPage" style="width:70%;height:100%;">
             </a>
             </div>
         </div>
