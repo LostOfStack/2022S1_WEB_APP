@@ -185,9 +185,6 @@
             <div class="form-group">
                 <input type="submit" class="btn btn-primary" value="Login">
             </div>
-            <div class="form-group" id="guest">
-                <a href = "/2022S1_WEB_APP/index.php">Login as a guest</a>
-            </div><br>
             <p>Don't have an account? <a href="signup.php">Sign up now</a>.</p>
         </form>
     </div>
