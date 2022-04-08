@@ -1,5 +1,6 @@
 <style>
     footer{
+        max-height:400px;
         margin-top:50px;
         position: static;
         left: 0;
