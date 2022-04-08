@@ -1,9 +1,7 @@
 <?php
     require 'config.php';
     include('includes/header.php');
-    // if(!isset($_SESSION["loggedin"])){
-    //     header('location: login.php');
-    // }
+
     $user_id=$_SESSION['id'];
     $user_products_query="select it.id,it.name,it.price from user_items ut inner join product it on it.id=ut.item_id where ut.user_id='$user_id'";
     $user_products_result=mysqli_query($con,$user_products_query) or die(mysqli_error($con));
@@ -24,17 +22,48 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Cart</title>
     </head>
     <body>
+        <style>
+            td{
+                text-align: center;
+            }
+            .wrapper{
+                width: 80%; 
+                padding: 20px;
+                margin-top: 150px;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 10px;
+                position: static;
+                border-style: solid;
+                border-color: black;
+                border-width: 1px;
+                border-radius: 10px;
+                background-color: white;
+                text-align: center;
+            }
+            #remove {
+                color: red;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+            #confirm {
+                color:blueviolet;
+                text-decoration: none;
+            }
+        </style>
         
         <?php $page = null; include('includes/navigation.php'); ?>
 
         
-        <h1>Shopping Cart</h1>
+        
 
         <br>
-            <div class="container">
-                <table class="table table-bordered table-striped">
+            <div class="wrapper">
+                <h1>Shopping Cart</h1>
+                <table class="table table-bordered table-striped" width='100%' border=1>
                     <tbody>
                         <tr>
                             <th>Item Number</th><th>Item Name</th><th>Price</th><th></th>
@@ -47,12 +76,12 @@
                            
                          ?>
                         <tr>
-                            <th><?php echo $counter ?></th><th><?php echo $row['name']?></th><th><?php echo $row['price']?></th>
-                            <th><a href='cart_remove.php?id=<?php echo $row['id'] ?>'>Remove</a></th>
+                            <td><?php echo $counter ?></td><td><?php echo $row['name']?></td><td><?php echo $row['price']?></td>
+                            <td><a id="remove" href='cart_remove.php?id=<?php echo $row['id'] ?>'>Remove</a></td>
                         </tr>
                        <?php $counter=$counter+1;}?>
                         <tr>
-                            <th></th><th>Total</th><th>Rs <?php echo $sum;?>/-</th><th><a href="confirmpayment.php?id=<?php echo $user_id?>" class="btn btn-primary">Confirm Order</a></th>
+                            <th></th><th>Total</th><th>RM <?php echo $sum;?>/-</th><th><a id="confirm" href="confirmpayment.php?id=<?php echo $user_id?>" class="btn btn-primary">Confirm Order</a></th>
                         </tr>
                     </tbody>
                 </table>

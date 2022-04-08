@@ -32,6 +32,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Profile</title>
         <?php include('includes/header.php'); ?>
         <?php $page = null; include('includes/navigation.php'); ?>
         <style>
@@ -42,6 +43,9 @@
 
             #reset a:link, #reset a:visited {
                 background-color: black;
+                box-shadow: 0 5px 0 darkred;
+                text-transform: uppercase;
+                position: relative;
                 border-width:2px;
                 border-color: white;
                 border-style: solid;
@@ -57,6 +61,12 @@
                 background-color: rgb(150,150,255);
                 color: black;
             }
+
+            #reset a:active {
+            box-shadow: none;
+            top: 5px;
+            }
+
             input[type=email], input[type=tel], select {
             width: 50%;
             padding: 12px 20px;
