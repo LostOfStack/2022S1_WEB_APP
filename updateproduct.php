@@ -11,6 +11,7 @@ $result = mysqli_query($con, $sql);
         <title>Update product</title>
 
         <style>
+            body{ font: 14px sans-serif; }
             table{
                 margin-left:auto;
                 margin-right:auto;
