@@ -8,9 +8,8 @@ $result = mysqli_query($con, $sql);
 <!DOCTYPE html>
 <html>
     <head>
-        <style>
-            
-            </style>
+        <link rel="stylesheet"  href="/2022S1_WEB_APP/Style.css">
+
     </head>
     <body>
         <header class="container">

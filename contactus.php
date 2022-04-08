@@ -8,43 +8,6 @@
             include('includes/navigation.php');
         ?>
 
-        <style>
-            .contactus01{
-                float:left;
-                margin-left: 50px;
-                margin-right: 50px;
-                padding: 20px;
-                position: static;
-                width: 50%;
-                border-style: solid;
-                border-color: black;
-                border-radius: 30px;
-                background-color: white;
-                text-align: left;
-                box-shadow: 5px 10px 5px #888888;
-                min-width: 600px;
-                max-width: 1000px;
-            }
-
-            .contactus02{
-                margin: 50px;
-                float:none;
-                position:static;
-                padding:20px;
-            }
-
-            .contactus03{
-                float:none;
-                margin-left:50px;
-                margin-right: auto;
-                padding: 20px;
-                position: static;
-                width: auto;
-                height: 600px;
-                text-align: center;
-                min-width: 400px;
-            }
-        </style>
     </head>
     <body>
 

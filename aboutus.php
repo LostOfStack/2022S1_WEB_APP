@@ -6,32 +6,8 @@
             include('includes/header.php');
             $page = null;
             include('includes/navigation.php');
-        ?>
-        <style>
-            .aboutus01{
-                width:100%;
-                background-color:#001719;
-                height:500px;
-                text-align:center;
-            }
 
-            .aboutus02{
-                margin-top: 50px;
-                margin-right: auto;
-                margin-left: auto;
-                padding: 20px;
-                position: static;
-                width: 50%;
-                border-style: solid;
-                border-color: black;
-                border-radius: 30px;
-                background-color: white;
-                text-align: left;
-                box-shadow: 5px 10px 5px #888888;
-                min-width: 400px;
-            }
-            
-        </style>
+        ?>
     </head>
     <body>
 
