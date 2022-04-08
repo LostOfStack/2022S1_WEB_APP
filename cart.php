@@ -4,7 +4,7 @@
     include('includes/header.php');
 
     $user_id=$_SESSION['id'];
-    $user_products_query="select it.id,it.name,it.price from user_items ut inner join product it on it.id=ut.item_id where ut.user_id='$user_id'";
+    $user_products_query="select it.id,it.pname,it.price from user_items ut inner join product it on it.id=ut.item_id where ut.user_id='$user_id'";
     $user_products_result=mysqli_query($con,$user_products_query) or die(mysqli_error($con));
     $no_of_user_products= mysqli_num_rows($user_products_result);
     $sum=0;
@@ -77,7 +77,7 @@
                            
                          ?>
                         <tr>
-                            <td><?php echo $counter ?></td><td><?php echo $row['name']?></td><td><?php echo $row['price']?></td>
+                            <td><?php echo $counter ?></td><td><?php echo $row['pname']?></td><td><?php echo $row['price']?></td>
                             <td><a id="remove" href='cart_remove.php?id=<?php echo $row['id'] ?>'>Remove</a></td>
                         </tr>
                        <?php $counter=$counter+1;}?>
