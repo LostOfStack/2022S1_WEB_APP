@@ -40,7 +40,7 @@
                         <div class="panel panel-primary">
                             <div class="panel-heading"></div>
                             <div class="panel-body">
-                                <p style="font-size:24px">Your order is confirmed. Thank you for shopping with us. <a href="index.php">Click here</a> to purchase any other item.</p>
+                                <p style="font-size:24px">Your order is confirmed. Items will be delivered within 3 Days. Thank you for shopping with us. <a href="index.php">Click here</a> to purchase any other item.</p>
                             </div>
                         </div>
                     </div>
