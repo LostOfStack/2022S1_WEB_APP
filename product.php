@@ -79,7 +79,7 @@ $result = mysqli_query($con, $sql);
                             if(check_if_added_to_cart($row1['id'])){
                                 echo '<a href="#" class=btn btn-block btn-success disabled>Added to cart</a>';
                             }else{
-                                if(check_if_added_to_cart(.$row['id'].)){
+                                if(check_if_added_to_cart($row['id'])){
                                     echo '<a href="#" class=btn btn-block btn-success disabled>Added to cart</a>';
                                 }else{
                                     echo '<a href="cart_add.php?id='.$row['id'].'" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Add to cart</a>';
