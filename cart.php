@@ -1,9 +1,7 @@
 <?php
     require 'config.php';
     include('includes/header.php');
-    // if(!isset($_SESSION["loggedin"])){
-    //     header('location: login.php');
-    // }
+
     $user_id=$_SESSION['id'];
     $user_products_query="select it.id,it.name,it.price from user_items ut inner join product it on it.id=ut.item_id where ut.user_id='$user_id'";
     $user_products_result=mysqli_query($con,$user_products_query) or die(mysqli_error($con));
@@ -46,6 +44,15 @@
                 background-color: white;
                 text-align: center;
             }
+            #remove {
+                color: red;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+            #confirm {
+                color:blueviolet;
+                text-decoration: none;
+            }
         </style>
         
         <?php $page = null; include('includes/navigation.php'); ?>
@@ -70,11 +77,11 @@
                          ?>
                         <tr>
                             <td><?php echo $counter ?></td><td><?php echo $row['name']?></td><td><?php echo $row['price']?></td>
-                            <td><a href='cart_remove.php?id=<?php echo $row['id'] ?>'>Remove</a></td>
+                            <td><a id="remove" href='cart_remove.php?id=<?php echo $row['id'] ?>'>Remove</a></td>
                         </tr>
                        <?php $counter=$counter+1;}?>
                         <tr>
-                            <th></th><th>Total</th><th>RM <?php echo $sum;?>/-</th><th><a href="confirmpayment.php?id=<?php echo $user_id?>" class="btn btn-primary">Confirm Order</a></th>
+                            <th></th><th>Total</th><th>RM <?php echo $sum;?>/-</th><th><a id="confirm" href="confirmpayment.php?id=<?php echo $user_id?>" class="btn btn-primary">Confirm Order</a></th>
                         </tr>
                     </tbody>
                 </table>
