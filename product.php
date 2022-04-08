@@ -30,6 +30,7 @@ $numRow = mysqli_num_rows($result);
                 margin-right:auto;
                 padding:10px;
             }
+<<<<<<< HEAD
             .pbox{
                 box-sizing: border-box;
                 float:left;
@@ -103,6 +104,8 @@ $numRow = mysqli_num_rows($result);
             .btn-primary:hover::before{
                 transform: translate(7px,7px);
             }
+=======
+>>>>>>> 15403bc217c9bbfd9d6e5a4f779c68edb3ab3d2f
         </style>
     </head>
     <body>

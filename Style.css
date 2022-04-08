@@ -10,6 +10,80 @@ h1{
     text-align: center;
 }
 
+.login{
+    width:180px;
+    height:35px;
+    position: fixed;
+    top: 15px;
+    right: 10px;
+}
+
+.login a:link, .login a:visited {
+    background-color: black;
+    border-width:2px;
+    border-color: white;
+    border-style: solid;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.login a:hover, .login a:active {
+    background-color: #33AF33;
+}
+
+.logout{
+    width:180px;
+    height:35px;
+    position: fixed;
+    top: 15px;
+    right: 10px;
+}
+
+.logout a:link, .logout a:visited {
+    background-color: black;
+    border-width:2px;
+    border-color: white;
+    border-style: solid;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.logout a:hover, .logout a:active {
+    background-color: red;
+}
+
+.crop img {
+    width: 300px;
+    height: 80px;
+}
+
+.profile img{
+    width: 50px;
+    height: 50px;
+}
+
+.container{
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+.profile a{
+    font-size:48px;
+    color:gray;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+}
+
 .myhome{
     margin-top: 130px;
     font-size: 5em;
@@ -29,6 +103,104 @@ h1{
     box-sizing: border-box
   }
 
+  .contactus01{
+    float:left;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 20px;
+    position: static;
+    width: 50%;
+    border-style: solid;
+    border-color: black;
+    border-radius: 30px;
+    background-color: white;
+    text-align: left;
+    box-shadow: 5px 10px 5px #888888;
+    min-width: 600px;
+    max-width: 1000px;
+}
+
+.contactus02{
+    margin: 50px;
+    float:none;
+    position:static;
+    padding:20px;
+}
+
+.contactus03{
+    float:none;
+    margin-left:50px;
+    margin-right: auto;
+    padding: 20px;
+    position: static;
+    width: auto;
+    height: 600px;
+    text-align: center;
+    min-width: 400px;
+}
+
+.pbox{
+    box-sizing: border-box;
+    float:left;
+    width:100%;
+    height:370px;
+    background-color:white;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.pimg{
+    box-sizing: border-box;
+    float:left;
+    width:380px;
+    height:380px;
+    margin:auto;
+}
+.pimg img{
+    max-width:360px;
+    width:auto;
+    height:auto;
+    max-height:360px;
+}
+.ptextbox2{
+    text-align:center;
+    padding:10px;
+    margin:auto;
+    box-sizing: border-box;
+    float:right;
+    height:380px;
+    width:200px;
+}
+.ptextbox{
+    padding:10px;
+    margin:auto;
+    box-sizing: border-box;
+    float:left;
+    height:380px;
+    width:600px;
+}
+
+.aboutus01{
+    width:100%;
+    background-color:#001719;
+    height:500px;
+    text-align:center;
+}
+
+.aboutus02{
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+    position: static;
+    width: 50%;
+    border-style: solid;
+    border-color: black;
+    border-radius: 30px;
+    background-color: white;
+    text-align: left;
+    box-shadow: 5px 10px 5px #888888;
+    min-width: 400px;
+}
 
 .profile01{
     margin-top: 150px;
@@ -55,24 +227,3 @@ h1{
 * {
     box-sizing: border-box;
 }
-
-.column {
-    display:block;
-    float: left;
-    background-color: white;
-    width: 400px;
-    height: 500px;
-    padding: 10px;
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: center;
-    position:static;
-}
-.row{
-    content: "";
-    display: block;
-    clear: both;
-}
-

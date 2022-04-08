@@ -7,7 +7,6 @@
     
     // Include config file
     require_once "config.php";
-    
     // Define variables and initialize with empty values
     $username = $password = "";
     $username_err = $password_err = $login_err = "";
@@ -53,7 +52,7 @@
                         if(mysqli_stmt_fetch($stmt)){
                             if(password_verify($password, $hashed_password)){
                                 // Password is correct, so start a new session
-                                session_start();
+                                //session_start();
                                 
                                 // Store data in session variables
                                 $_SESSION["loggedin"] = true;
