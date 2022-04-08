@@ -4,7 +4,6 @@ $sql = "SELECT * FROM product ORDER BY id ASC";
 $result = mysqli_query($con, $sql);
 ?>
 
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -76,7 +75,7 @@ $result = mysqli_query($con, $sql);
                     echo "<td>".$row['description']."</td>";
                     echo "<td>".$row['quantity']."</td>";
                     echo "<td>".$row['img_directory']."</td>";
-                    echo "<td style=\"background-color:DarkBlue\";><a href='edit.php?id=".$row['id']."'>Edit</a> | <a href='deleteproduct.php?id=".$row['id']."'>Delete</a></td></tr>";
+                    echo "<td style=\"background-color:DarkBlue\";><a href='editproduct.php?id=".$row['id']."'>Edit</a> | <a href='deleteproduct.php?id=".$row['id']."'>Delete</a></td></tr>";
                 }
             ?>
             </table>

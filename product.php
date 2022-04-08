@@ -54,9 +54,9 @@ $numRow = mysqli_num_rows($result);
 
                             <div class="ptextbox">
                                 <h2>'.$row['brand'].'</h2>
-                                <h3>'.$row['name'].'</h3>
+                                <h3>'.$row['pname'].'</h3>
                                 <h3>Description:</h3>
-                                <p>'.$row['description'].'</p>
+                                <p>'.$row['pdescription'].'</p>
                             </div>
                             <div class="ptextbox2">
                                 <h3>Price: RM'.$row['price'].'</h3>';
