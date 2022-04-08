@@ -59,9 +59,8 @@
                                 $_SESSION["loggedin"] = true;
                                 $_SESSION["id"] = $id;
                                 $_SESSION["username"] = $username;                            
-                                if(){//is admin
-                                    $_SESSION["id"] == 
-                                    $_SESSION["username"] ==
+                                if($_SESSION["id"] == 1){//is admin
+                                    header("location: updateproduct.php");
                                 }else{// Redirect user to home page
                                 header("location: index.php");
                                 }
