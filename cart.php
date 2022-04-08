@@ -26,6 +26,11 @@
     <head>
     </head>
     <body>
+        <style>
+            td{
+                text-align: center;
+            }
+        </style>
         
         <?php $page = null; include('includes/navigation.php'); ?>
 
@@ -33,8 +38,8 @@
         <h1>Shopping Cart</h1>
 
         <br>
-            <div class="container">
-                <table class="table table-bordered table-striped">
+            <div id="table">
+                <table class="table table-bordered table-striped" width='80%' border=1>
                     <tbody>
                         <tr>
                             <th>Item Number</th><th>Item Name</th><th>Price</th><th></th>
@@ -47,8 +52,8 @@
                            
                          ?>
                         <tr>
-                            <th><?php echo $counter ?></th><th><?php echo $row['name']?></th><th><?php echo $row['price']?></th>
-                            <th><a href='cart_remove.php?id=<?php echo $row['id'] ?>'>Remove</a></th>
+                            <td><?php echo $counter ?></td><td><?php echo $row['name']?></td><td><?php echo $row['price']?></td>
+                            <td><a href='cart_remove.php?id=<?php echo $row['id'] ?>'>Remove</a></td>
                         </tr>
                        <?php $counter=$counter+1;}?>
                         <tr>
