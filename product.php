@@ -30,7 +30,6 @@ $numRow = mysqli_num_rows($result);
                 margin-right:auto;
                 padding:10px;
             }
-<<<<<<< HEAD
             .pbox{
                 box-sizing: border-box;
                 float:left;
@@ -76,12 +75,16 @@ $numRow = mysqli_num_rows($result);
                 position: relative;
                 margin: 32px;
             }
-            .btn-primary{
-                background: #000;
+            .btn-primary {
                 color: #fff;
-                border-radius: 1000px;
-                transition: transform 0.3s ease;
+                background-color: #000;
+                border-color: #2e6da4;
             }
+            .btn-block {
+                display: block;
+                width: 80%;
+            }
+
             .btn-primary::after, .btn-primary::before{
                 content:"";
                 position: absolute;
@@ -104,8 +107,11 @@ $numRow = mysqli_num_rows($result);
             .btn-primary:hover::before{
                 transform: translate(7px,7px);
             }
-=======
->>>>>>> 15403bc217c9bbfd9d6e5a4f779c68edb3ab3d2f
+            .btn-success {
+                color: #fff;
+                background-color: #5cb85c;
+                border-color: #4cae4c;
+            }
         </style>
     </head>
     <body>
@@ -137,7 +143,7 @@ $numRow = mysqli_num_rows($result);
                             <div class="ptextbox2">
                                 <h3>Price: RM'.$row['price'].'</h3>';
                                 if(!isset($_SESSION["loggedin"])){
-                                    echo '<p><a href="login.php" role="button" class="btn btn-primary ">Buy Now</a></p>';
+                                    echo '<p><a href="login.php" role="button" class="btn btn-primary btn-block ">Buy Now</a></p>';
                                 }else{
                                     if(check_if_added_to_cart($row['id'])){
                                         echo '<a href="#" class=btn btn-success disabled>Added to cart</a>';
