@@ -12,14 +12,14 @@
 </head>
 <body>
     
-    <div class="main">
+    <div style="margin-left:50px; margin-right:50px;">
         <?php 
             if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true)
                 echo '<h1>Welcome, our guest!</h1>';
             else
                 echo '<h1>Welcome, <b>'.htmlspecialchars($_SESSION["username"]).'</b>!!!</h1>';
         ?>
-        <h1 style="font-size:100px;text-align:center;">Our Main Product</h1>
+        <h1 style="font-size:64px;text-align:center;">Our Main Product</h1>
     
     <div class="rowhome">
             <div class="columnhome">
@@ -51,7 +51,7 @@
             <p style="font-size:50px;">Monitor</p>
             </div>
         </div>
-        <h2 style="font-size:100px;text-align:center;">Other Product</h2>
+        <h2 style="font-size:64px;text-align:center;">Other Product</h2>
     <div class="rowhome">
             <div class="columnhome">
             <a href="/2022S1_WEB_APP/product.php?page=smartphone">
@@ -82,7 +82,7 @@
             <p style="font-size:50px;">Speaker</p>
             </div>
         </div>
-        <h2 style="font-size:100px;text-align:center;">Why Choose Us</h2>
+        <h2 style="font-size:64px;text-align:center;">Why Choose Us</h2>
         <div class="rowhome">
             <div class="columnhome">
             <img src="image/cash2.png" alt="CashLogo" style="width:55%;height:100%;">
