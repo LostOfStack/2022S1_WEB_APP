@@ -16,7 +16,7 @@ if(isset($_POST['update']))
 
 		
 	// update announcement data
-	$result = mysqli_query($con, "UPDATE product SET ptype='$ptype',brand='$brand',pname='$pname',price='$price', pdescription='$pdescription', quantity='$quantity', img_directory='img_directory' WHERE id=$id");
+	$result = mysqli_query($con, "UPDATE product SET ptype='$ptype',brand='$brand',pname='$pname',price='$price', pdescription='$pdescription', quantity='$quantity', img_directory='$img_directory' WHERE id=$id");
 	
 	// Redirect to homepage to display updated announcement in list
 	header("Location: updateproduct.php");

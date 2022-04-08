@@ -51,7 +51,7 @@
 <body id="navbody">
 
   <div id="myDIV" class="topnav">
-    <a class="<?php if($page == "Home") {echo "active";} ?>" href = "/2022S1_WEB_APP/index.php">HOME</a>
+    <a class="<?php if($page == "Home") {echo "active";} ?>" href = "/2022S1_WEB_APP/index.php?page=Home">HOME</a>
     <a class="<?php if($page == "Laptop") {echo "active";} ?>" href = "/2022S1_WEB_APP/product.php?page=Laptop">LAPTOP</a>
     <a class="<?php if($page == "Desktop") {echo "active";} ?>" href = "/2022S1_WEB_APP/product.php?page=Desktop">DESKTOP</a>
     <a class="<?php if($page == "Monitor") {echo "active";} ?>" href = "/2022S1_WEB_APP/product.php?page=Monitor">MONITOR</a>

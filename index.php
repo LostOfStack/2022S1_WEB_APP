@@ -7,13 +7,12 @@
     <meta charset="UTF-8">
     <title>Home</title>
     
+    <?php include('includes/header.php'); ?>
+    <?php $page = "Home"; include('includes/navigation.php'); ?>
 </head>
 <body>
     
-    <?php include('includes/header.php'); ?>
-    <?php $page = "home"; include('includes/navigation.php'); ?>
-
-    <div class="myhome">
+    <div class="main">
         <?php 
             if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true)
                 echo '<h1>Welcome, our guest!</h1>';
@@ -21,7 +20,7 @@
                 echo '<h1>Welcome, <b>'.htmlspecialchars($_SESSION["username"]).'</b>!!!</h1>';
         ?>
         <h1 style="font-size:100px;text-align:center;">Our Main Product</h1>
-    </div>
+    
     <div class="rowhome">
             <div class="columnhome">
             <a href="/2022S1_WEB_APP/product.php?page=laptop">
@@ -111,6 +110,7 @@
             <p style="font-size:50px;">Professional</p>
             </div>
         </div>
+    </div>
     <style>
         .wrapper{
             margin-top: 150px;

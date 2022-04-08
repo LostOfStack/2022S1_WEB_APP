@@ -45,7 +45,7 @@
                 background-color: black;
                 box-shadow: 0 5px 0 darkred;
                 text-transform: uppercase;
-                position: relative;
+                position: static;
                 border-width:2px;
                 border-color: white;
                 border-style: solid;

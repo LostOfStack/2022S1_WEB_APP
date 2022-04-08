@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 include('includes/header.php');
 // Include config file
 require_once "config.php";
