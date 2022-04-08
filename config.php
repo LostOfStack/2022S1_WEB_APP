@@ -3,7 +3,6 @@
  * using mysqli_connect for database connection
  */
 
-
 $con = mysqli_connect("localhost","root","","database");
 
 if($con === false){
