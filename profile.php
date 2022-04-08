@@ -1,6 +1,6 @@
 <?php 
     // Initialize the session
-   
+    session_start();
     include_once("config.php"); 
 
     // Check if form is submitted for  update, then redirect to homepage after update
