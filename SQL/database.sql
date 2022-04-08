@@ -88,7 +88,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `password`, `email`, `phoneNo`, `gender`, `created_at`) VALUES
-(2, 'admin', '$2y$10$LRsSCmxs3Uvflv0.VtoEwuaRhjwugpBxugV8qfzZd3ppUZyfYLZSu', 'admin@gmail.com', '012-3456789', 'others', '2022-04-08 13:46:04');
+(1, 'admin', '$2y$10$LRsSCmxs3Uvflv0.VtoEwuaRhjwugpBxugV8qfzZd3ppUZyfYLZSu', 'admin@gmail.com', '012-3456789', 'others', '2022-04-08 13:46:04');
 COMMIT;
 
 -- --------------------------------------------------------
