@@ -1,7 +1,7 @@
 <?php
 // Include config file
 require_once "config.php";
- 
+session_start(); 
 // Define variables and initialize with empty values
 $username = $password = $confirm_password = $email = $phone = $gender = "";
 $username_err = $password_err = $confirm_password_err = $email_err = $phone_err = $gender_err = "";
@@ -124,7 +124,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <head>
     <meta charset="UTF-8">
     <title>Sign Up</title>
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+    
     <style>
         body{ font: 14px sans-serif; }
         .wrapper{
