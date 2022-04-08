@@ -1,6 +1,6 @@
 <?php 
 require 'config.php';
-$sql = "SELECT * FROM product ASC";
+$sql = "SELECT * FROM product ORDER BY id ASC";
 $result = mysqli_query($con, $sql);
 ?>
 
@@ -18,7 +18,7 @@ $result = mysqli_query($con, $sql);
                 <th>Product Type</th><th>Brand</th><th>Name</th><th>Price</th><th>Description</th><th>Quantity</th><th>Image directory</th>
             </tr>
         <?php
-            while($row = mysqli_fetcharray($result)){
+            while($row = mysqli_fetch_array($result)){
                 echo "<tr>";
                 echo "<td>".$row['ptype']."</td>";
                 echo "<td>".$row['brand']."</td>";

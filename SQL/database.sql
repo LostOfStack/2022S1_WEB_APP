@@ -44,7 +44,7 @@ CREATE TABLE IF NOT EXISTS `product` (
 -- Dumping data for table `product`
 --
 
-INSERT INTO `product` (`id`, `ptype`, `brand`, `name`, `price`, `description`, `quantiy`, `img_directory`) VALUES
+INSERT INTO `product` (`id`, `ptype`, `brand`, `name`, `price`, `description`, `quantity`, `img_directory`) VALUES
 (1, 'Laptop', 'APPLE\r\n', 'MacBookPro13', 5599, '8thâ€‘generation Intel Core i5 processor, Intel Iris Plus Graphics 645, 8GB 2133MHz LPDDR3 memory and a 256GB SSD storage. It also has a 13.3â€‘inch (diagonal) 2560x1600 native resolution at 227 pixels per inch with support for millions of display and weighs 1.4kg.', 20, 'image/apple laptop.jpg'),
 (2, 'Laptop', 'DELL\r\n', 'New XPS 17 Laptop', 9945, '12th Generation IntelÂ® Coreâ„¢ i7-12700H, Windows 11 Home Single Language(Dell Technologies recommends Windows 11 Pro for business) NVIDIAÂ® GeForce RTXâ„¢ 3050, 4 GB GDDR6, 60 W16 GB, 2 x 8 GB, DDR5, 4800 MHz, dual-channel 512 GB, M.2, PCIe NVMe, SSD 17.0-in. display.', 20, 'image/dell laptop.jpg'),
 (3, 'Laptop', 'ACER\r\n', 'Aspire 3 ', 2099, '15.6\" FHD, Intel Pentium Silver N6000, 4GB RAM + 512GB SSD, IntelÂ® UHD Graphics, Windows 10 (Preloaded MS Office Home  & Student) ', 20, 'image/acer laptop.jpg'),
