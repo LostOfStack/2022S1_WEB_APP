@@ -4,15 +4,40 @@ $sql = "SELECT * FROM product ORDER BY id ASC";
 $result = mysqli_query($con, $sql);
 ?>
 
+        echo '<header class="container">
+            <div class="crop">
+                <img src="/2022S1_WEB_APP/image/Hardwareology.png" alt="Hardwareology">
+            </div>
+            <div class="logout">
+                <a href = "/2022S1_WEB_APP/logout.php">Log out</a>
+            </div>
+            <div class="profile">
+                <a href = "/2022S1_WEB_APP/profile.php"><img src="/2022S1_WEB_APP/image/profileIcon.png" alt="Profile"></a>
+            </div>
+        </header>'
+
 <!DOCTYPE html>
 <html>
     <head>
-        <?php include('includes/header.php');?>
         <style>
             
-        </style>
+            </style>
     </head>
     <body>
+        
+        <header class="container">
+                <div class="crop">
+                    <img src="/2022S1_WEB_APP/image/Hardwareology.png" alt="Hardwareology">
+                </div>
+                <div class="logout">
+                    <a href = "/2022S1_WEB_APP/logout.php">Log out</a>
+                </div>
+                <div class="profile">
+                    <a href = "/2022S1_WEB_APP/profile.php"><img src="/2022S1_WEB_APP/image/profileIcon.png" alt="Profile"></a>
+                </div>
+        </header>
+
+
         <table>
             <tr>
                 <th>Product Type</th><th>Brand</th><th>Name</th><th>Price</th><th>Description</th><th>Quantity</th><th>Image directory</th>
