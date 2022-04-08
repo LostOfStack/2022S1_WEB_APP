@@ -8,7 +8,9 @@
 
 <?php
     session_start();
-
+    if($_SESSION["id"] == NULL){
+        $_SESSION["id"] = 0;
+    }
 
     if($_SESSION["id"] == 1){
         echo '<header class="container">
