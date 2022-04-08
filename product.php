@@ -30,45 +30,6 @@ $numRow = mysqli_num_rows($result);
                 margin-right:auto;
                 padding:10px;
             }
-            .pbox{
-                box-sizing: border-box;
-                float:left;
-                width:100%;
-                height:370px;
-                background-color:white;
-                margin-top:10px;
-                margin-bottom:10px;
-            }
-            .pimg{
-                box-sizing: border-box;
-                float:left;
-                width:380px;
-                height:380px;
-                margin:auto;
-            }
-            .pimg img{
-                max-width:360px;
-                width:auto;
-                height:auto;
-                max-height:360px;
-            }
-            .ptextbox2{
-                text-align:center;
-                padding:10px;
-                margin:auto;
-                box-sizing: border-box;
-                float:right;
-                height:380px;
-                width:200px;
-            }
-            .ptextbox{
-                padding:10px;
-                margin:auto;
-                box-sizing: border-box;
-                float:left;
-                height:380px;
-                width:600px;
-            }
         </style>
     </head>
     <body>
