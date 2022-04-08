@@ -59,9 +59,12 @@
                                 $_SESSION["loggedin"] = true;
                                 $_SESSION["id"] = $id;
                                 $_SESSION["username"] = $username;                            
-                                
-                                // Redirect user to home page
+                                if(){//is admin
+                                    $_SESSION["id"] == 
+                                    $_SESSION["username"] ==
+                                }else{// Redirect user to home page
                                 header("location: index.php");
+                                }
                             } else{
                                 // Password is not valid, display a generic error message
                                 $login_err = "Invalid username or password.";
